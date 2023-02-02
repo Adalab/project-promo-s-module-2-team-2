@@ -21,19 +21,19 @@
     grid-area: title;
     margin-left: 19px;
   }
-  &__container--colors1 {
-  }
   .colors--one {
     display: inline-block;
     background-color: $dark-green-blue;
     width: 30px;
     height: 25px;
+    margin-right: -4px;
   }
   .colors--two {
     display: inline-block;
     background-color: $dirty-blue;
     width: 30px;
     height: 25px;
+    margin-right: -4px;
   }
   .colors--three {
     display: inline-block;
@@ -41,19 +41,19 @@
     width: 30px;
     height: 25px;
   }
-  &__container--colors2 {
-  }
   .colors--four {
     display: inline-block;
     background-color: $dried-blood;
     width: 30px;
     height: 25px;
+    margin-right: -4px;
   }
   .colors--five {
     display: inline-block;
     background-color: $rusty-red;
     width: 30px;
     height: 25px;
+    margin-right: -4px;
   }
   .colors--six {
     display: inline-block;
@@ -61,4 +61,24 @@
     width: 30px;
     height: 25px;
   }
+}
+.colors--seven {
+  display: inline-block;
+  background-color: $slate;
+  width: 30px;
+  height: 25px;
+  margin-right: -4px;
+}
+.colors--eight {
+  display: inline-block;
+  background-color: $faded-orange;
+  width: 30px;
+  height: 25px;
+  margin-right: -4px;
+}
+.colors--nine {
+  display: inline-block;
+  background-color: $light-grey-blue;
+  width: 30px;
+  height: 25px;
 }
