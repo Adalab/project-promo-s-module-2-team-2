@@ -1,11 +1,49 @@
-<form action="" class="form">
+<form class="form" action="post" method="https://formspree.io/f/mayzqvjg">
   <fieldset class="design">
-    <h3 class="tile__design">DISEÑA</h3>
+    <h3 class="design__title">
+      <i class="fa-regular fa-object-ungroup"></i>
+      DISEÑA</h3>
+    <label class="design__label" for="colors" >COLORES
+        <input id="colors" type="radio" name="colors">
+        <div class="desing__colors--one"></div>
+        <div class="desing__colors--two"></div>
+        <div class="desing__colors--three"></div>
+        <input id="colors" type="radio" name="colors">
+        <div class="desing__colors--four"></div>
+        <div class="desing__colors--five"></div>
+        <div class="desing__colors--six"></div>
+        <input id="colors" type="radio" name="colors">
+        <div class="desing__colors--seven"></div>
+        <div class="desing__colors--eight"></div>
+        <div class="desing__colors--nine"></div>
+    </label>
   </fieldset>
   <fieldset class="fill">
-    <h3 class="title__fill">RELLENA</h3>
+    <h3 class="fill__title"><i class="fa-light fa-keyboard"></i>RELLENA</h3>
+    <label class="fill__label" for="full_name">Nombre completo
+        <input type="text" id="full_name" name="full_name" placeholder="Ej: Pepino Conde Furfur" required>
+    </label>
+    <label class="fill__label" for="job">Puesto
+        <input type="text" id="job" name="job" placeholder="Ej: Mascota Adalab" required>
+    </label>
+    <label class="fill__label" for="photo">Imagen de perfil
+        <input type="file" id="photo" name="photo" required>
+    </label>
+    <label class="fill__label" for="email">Email
+        <input type="email" id="email" name="email" placeholder="Ej: pepino_conde@furfur.com" required>
+    </label>
+    <label class="fill__label" for="phone">Teléfono
+        <input type="tel" id="phone" name="phone" placeholder="Ej: 666-54-32-10">
+    </label>
+    <label class="fill__label" for="linkedin">Linkedin
+        <input type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/pepino.furfur">
+    </label>
+    <label class="fill__label" for="github">Github
+        <input type="text" id="github" name="github" placeholder="Ej: @penino.furfur">
+    </label>
   </fielset>
   <fieldset class="share">
-    <h3 class="title__share"></h3>
+    <h3 class="share__title"><i class="fa-light fa-object-ungroup"></i>COMPARTE</h3>
+    <button class="share__button"></button>
   </fieldset>
 </form>
