@@ -1,0 +1,64 @@
+.design {
+  border-bottom: solid 1px $white-three;
+  padding-bottom: 30px;
+
+  &__title {
+    font: $openSans_18;
+    color: $gunmetal;
+    margin-bottom: 22px;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: 60% 10% 30%;
+    grid-template-areas:
+      "title radio1 colors1"
+      "title radio2 colors2"
+      "title radio3 colors3";
+    justify-items: start;
+  }
+  &__label {
+    font: $openSans_14;
+    grid-area: title;
+    margin-left: 19px;
+  }
+  &__container--colors1 {
+  }
+  .colors--one {
+    display: inline-block;
+    background-color: $dark-green-blue;
+    width: 30px;
+    height: 25px;
+  }
+  .colors--two {
+    display: inline-block;
+    background-color: $dirty-blue;
+    width: 30px;
+    height: 25px;
+  }
+  .colors--three {
+    display: inline-block;
+    background-color: $hospital-green;
+    width: 30px;
+    height: 25px;
+  }
+  &__container--colors2 {
+  }
+  .colors--four {
+    display: inline-block;
+    background-color: $dried-blood;
+    width: 30px;
+    height: 25px;
+  }
+  .colors--five {
+    display: inline-block;
+    background-color: $rusty-red;
+    width: 30px;
+    height: 25px;
+  }
+  .colors--six {
+    display: inline-block;
+    background-color: $tomato;
+    width: 30px;
+    height: 25px;
+  }
+}

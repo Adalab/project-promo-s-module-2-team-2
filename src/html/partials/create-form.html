@@ -2,48 +2,132 @@
   <fieldset class="design">
     <h3 class="design__title">
       <i class="fa-regular fa-object-ungroup"></i>
-      DISEÑA</h3>
-    <label class="design__label" for="colors" >COLORES
-        <input id="colors" type="radio" name="colors">
-        <div class="desing__colors--one"></div>
-        <div class="desing__colors--two"></div>
-        <div class="desing__colors--three"></div>
-        <input id="colors" type="radio" name="colors">
-        <div class="desing__colors--four"></div>
-        <div class="desing__colors--five"></div>
-        <div class="desing__colors--six"></div>
-        <input id="colors" type="radio" name="colors">
-        <div class="desing__colors--seven"></div>
-        <div class="desing__colors--eight"></div>
-        <div class="desing__colors--nine"></div>
-    </label>
+      DISEÑA
+    </h3>
+
+    <div class="design__container">
+      <label class="design__label" for="colors">COLORES </label>
+      <input
+        class="design__input--one"
+        id="colors"
+        type="radio"
+        name="colors"
+      />
+      <div class="design__container--colors1">
+        <div class="colors--one"></div>
+        <div class="colors--two"></div>
+        <div class="colors--three"></div>
+      </div>
+
+      <input
+        class="design__input--two"
+        id="colors"
+        type="radio"
+        name="colors"
+      />
+      <div class="design__container--colors2">
+        <div class="colors--four"></div>
+        <div class="colors--five"></div>
+        <div class="colors--six"></div>
+      </div>
+
+      <input
+        class="design__input--three"
+        id="colors"
+        type="radio"
+        name="colors"
+      />
+      <div class="design__container--colors3">
+        <div class="colors--seven"></div>
+        <div class="colors--eight"></div>
+        <div class="colors--nine"></div>
+      </div>
+    </div>
   </fieldset>
+
   <fieldset class="fill">
-    <h3 class="fill__title"><i class="fa-light fa-keyboard"></i>RELLENA</h3>
-    <label class="fill__label" for="full_name">Nombre completo
-        <input type="text" id="full_name" name="full_name" placeholder="Ej: Pepino Conde Furfur" required>
-    </label>
-    <label class="fill__label" for="job">Puesto
-        <input type="text" id="job" name="job" placeholder="Ej: Mascota Adalab" required>
-    </label>
-    <label class="fill__label" for="photo">Imagen de perfil
-        <input type="file" id="photo" name="photo" required>
-    </label>
-    <label class="fill__label" for="email">Email
-        <input type="email" id="email" name="email" placeholder="Ej: pepino_conde@furfur.com" required>
-    </label>
-    <label class="fill__label" for="phone">Teléfono
-        <input type="tel" id="phone" name="phone" placeholder="Ej: 666-54-32-10">
-    </label>
-    <label class="fill__label" for="linkedin">Linkedin
-        <input type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/pepino.furfur">
-    </label>
-    <label class="fill__label" for="github">Github
-        <input type="text" id="github" name="github" placeholder="Ej: @penino.furfur">
-    </label>
-  </fielset>
+    <h3 class="fill__title">
+      <i class="fa-regular fa-keyboard"></i>
+      RELLENA
+    </h3>
+
+    <label class="fill__label" for="full_name">Nombre completo</label>
+    <input
+      class="fill__input"
+      type="text"
+      id="full_name"
+      name="full_name"
+      placeholder="Ej: Pepino Conde Furfur"
+      required
+    />
+
+    <label class="fill__label" for="job">Puesto </label>
+    <input
+      class="fill__input"
+      type="text"
+      id="job"
+      name="job"
+      placeholder="Ej: Mascota Adalab"
+      required
+    />
+
+    <label class="fill__label" for="photo">Imagen de perfil</label>
+    <input
+      class="fill__input--image"
+      type="image"
+      id="photo"
+      name="photo"
+      value="Añadir imagen"
+      required
+    />
+
+    <label class="fill__label" for="email">Email</label>
+    <input
+      class="fill__input"
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Ej: pepino_conde@furfur.com"
+      required
+    />
+
+    <label class="fill__label" for="phone">Teléfono</label>
+    <input
+      class="fill__input"
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="Ej: 666-54-32-10"
+    />
+
+    <label class="fill__label" for="linkedin">Linkedin</label>
+    <input
+      class="fill__input"
+      type="text"
+      id="linkedin"
+      name="linkedin"
+      placeholder="Ej: linkedin.com/in/pepino.furfur"
+    />
+
+    <label class="fill__label" for="github">Github</label>
+    <input
+      class="fill__input"
+      type="text"
+      id="github"
+      name="github"
+      placeholder="Ej: @penino.furfur"
+    />
+  </fieldset>
   <fieldset class="share">
-    <h3 class="share__title"><i class="fa-light fa-object-ungroup"></i>COMPARTE</h3>
-    <button class="share__button"></button>
+    <h3 class="share__title">
+      <i class="fa-solid fa-share-nodes"></i>
+      COMPARTE
+    </h3>
+    <div class="share__container">
+      <button class="share__button">
+        <i class="fa-regular fa-address-card"></i>
+        CREAR TARJETA
+      </button>
+    </div>
   </fieldset>
 </form>

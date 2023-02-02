@@ -1,0 +1,34 @@
+.fill {
+  border-bottom: solid 1px $white-three;
+  padding-bottom: 10px;
+  &__title {
+    font: $openSans_18;
+    color: $gunmetal;
+    margin: 10px 0 25px;
+  }
+  &__label {
+    font: $openSans_14;
+    line-height: 20px;
+    color: $dark-green-blue;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+  }
+  &__input {
+    margin-bottom: 20px;
+    border: solid 1px $hospital-green;
+    width: 100%;
+    height: 30px;
+    &--image {
+      background-color: $dull-orange;
+      margin-bottom: 20px;
+      color: $white-two;
+      font: $openSans_14;
+      text-align: center;
+      width: 50%;
+      height: 30px;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    }
+  }
+}

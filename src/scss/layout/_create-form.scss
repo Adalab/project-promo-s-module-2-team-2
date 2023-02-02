@@ -1,16 +1,16 @@
 .form {
-  padding: 27px 20px 31px 20px;
-}
-.design {
-  &__title {
-    font: $openSans_18;
-    color: $gunmetal;
-  }
+  padding: 27px 20px 30px 20px;
+  background-image: linear-gradient(to bottom, $white-four, $white-two 80%);
 }
 
-.fa-object-ungroup {
+.fa-object-ungroup,
+.fa-share-nodes,
+.fa-keyboard {
   color: $dull-orange;
-  display: inline-block;
   width: 21px;
   height: 18px;
+  margin-right: 10px;
+}
+.fa-address-card {
+  margin-right: 7px;
 }

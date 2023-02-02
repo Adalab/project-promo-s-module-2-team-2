@@ -1,0 +1,23 @@
+.share {
+  border-bottom: solid 1px $white-three;
+  &__title {
+    margin: 10px 0 30px;
+    font: $openSans_18;
+    color: $gunmetal;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__button {
+    width: 200px;
+    height: 50px;
+    background-color: $dull-orange;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    border: none;
+    color: $white-two;
+    font: $openSans_18;
+    margin-bottom: 30px;
+  }
+}
