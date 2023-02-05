@@ -8,8 +8,9 @@
     margin-bottom: 22px;
   }
   &__container {
+    width: 100%;
     display: grid;
-    grid-template-columns: 60% 10% 30%;
+    grid-template-columns: 55% 10% 35%;
     grid-template-areas:
       "title radio1 colors1"
       "title radio2 colors2"

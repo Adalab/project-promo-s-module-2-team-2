@@ -72,14 +72,10 @@
     />
 
     <label class="fill__label" for="photo">Imagen de perfil</label>
-    <input
-      class="fill__input--image"
-      type="image"
-      id="photo"
-      name="photo"
-      value="Añadir imagen"
-      required
-    />
+    <div class="fill__label--container">
+      <label for="photo" class="fill__label--button">Añadir imagen</label>
+      <div class="fill__label--box"></div>
+    </div>
 
     <label class="fill__label" for="email">Email</label>
     <input
@@ -123,10 +119,18 @@
       <i class="fa-solid fa-share-nodes"></i>
       COMPARTE
     </h3>
-    <div class="share__container">
-      <button class="share__button">
+    <div class="share__container--one">
+      <button class="share__button--create">
         <i class="fa-regular fa-address-card"></i>
         CREAR TARJETA
+      </button>
+    </div>
+    <div class="share__container--two">
+      <p class="share__text">La tarjeta ha sido creada:</p>
+      <a href="" class="share__link"></a>
+      <button class="share__button--twitter">
+        <i class="fa-brands fa-twitter"></i>
+        Compartir en twitter
       </button>
     </div>
   </fieldset>

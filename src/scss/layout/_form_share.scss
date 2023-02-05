@@ -5,11 +5,13 @@
     font: $openSans_18;
     color: $gunmetal;
   }
-  &__container {
+  &__container--one {
     display: flex;
     justify-content: center;
+    border-bottom: solid 1px $white-three;
+    margin-bottom: 20px;
   }
-  &__button {
+  &__button--create {
     width: 200px;
     height: 50px;
     background-color: $dull-orange;
@@ -20,4 +22,30 @@
     font: $openSans_18;
     margin-bottom: 30px;
   }
+  &__container--two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__text {
+    font: $openSans_18;
+    color: $gunmetal;
+  }
+  &__button--twitter {
+    background-color: $azure;
+    color: $white-two;
+    font: $openSans_14;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    margin: 35px 0 30px 0;
+    padding: 0 10px;
+  }
+}
+.fa-address-card {
+  margin-right: 7px;
+}
+.fa-twitter {
+  margin-right: 10px;
 }

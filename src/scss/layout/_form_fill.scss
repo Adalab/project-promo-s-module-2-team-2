@@ -13,22 +13,34 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 7px;
+    &--button {
+      background-color: $dull-orange;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 50%;
+      color: $white-two;
+      font: $openSans_14;
+      margin-bottom: 20px;
+      border-radius: 3px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    }
+    &--box {
+      width: 30px;
+      height: 30px;
+      border: solid 1px $hospital-green;
+      margin-left: 10%;
+    }
+    &--container {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &__input {
     margin-bottom: 20px;
     border: solid 1px $hospital-green;
     width: 100%;
     height: 30px;
-    &--image {
-      background-color: $dull-orange;
-      margin-bottom: 20px;
-      color: $white-two;
-      font: $openSans_14;
-      text-align: center;
-      width: 50%;
-      height: 30px;
-      border-radius: 3px;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-    }
   }
 }
