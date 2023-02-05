@@ -1,0 +1,53 @@
+.background{
+    width: 320px;
+    height: 457px;
+    background-image: linear-gradient(to bottom, $silver, $pale-grey 80%);
+    padding: 38px 35px 40px 45px;
+}
+
+.card{
+    background-color: $white-two;
+    width: 240px;
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    box-shadow: 10px $black-20;
+
+        &__title {
+            font: $montserrat_18_700;
+            /*line-height: 20;*/
+            color: $dark-green-blue;
+        }
+        &__subtitle {
+            font: $montserrat_16;
+            color: $gunmetal;
+        }
+        &__img {
+            
+        }
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+        &__mobile,
+        &__mail,
+        &__linkedin,
+        &__github {
+            border: solid 2px $hospital-green;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin: 5px;
+                &--link {
+                text-decoration: none;
+                color: $dark-green-blue;
+                    .fa-solid,
+                    .fa-brands {
+                        margin: 6px 6px;
+                    }
+                }
+        }
+}
