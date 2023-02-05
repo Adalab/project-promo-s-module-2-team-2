@@ -3,28 +3,53 @@ footer {
     height: 110px;
     border: 1px solid var($white-three);
     background-color: var($white-two);
-}
-
-.copy{
-    color: var($brownish-grey);
-}
-
-.adalab_logo{
-    width: 103px;
-    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    
 }
 
 .footer__main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    margin: auto;
+
 }
+
+.copy{
+    color: var($brownish-grey);
+    font-size: 20px;
+    font-family: OpenSans;
+}
+
+.adalab_logo{
+    width: 103px;
+    height: 40px;
+    margin: 12px 47px 0 48px;
+}
+
 
 @media all and (min-width:768px){
     footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px 40px 10px 41px;
+        height: 60px;
+    }
+
+    .footer__main{
         display:flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: space-between;
-        height: 60px;
+        margin-left: 41px;
+    }
+
+    .copy{
+        font-size: 14px;
     }
 }
