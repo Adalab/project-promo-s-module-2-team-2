@@ -4,6 +4,8 @@
     margin: 10px 0 30px;
     font: $openSans_18;
     color: $gunmetal;
+    display: flex;
+    justify-content: space-between;
   }
   &__container--one {
     display: flex;

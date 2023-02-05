@@ -5,6 +5,8 @@
     font: $openSans_18;
     color: $gunmetal;
     margin: 10px 0 25px;
+    display: flex;
+    justify-content: space-between;
   }
   &__label {
     font: $openSans_14;

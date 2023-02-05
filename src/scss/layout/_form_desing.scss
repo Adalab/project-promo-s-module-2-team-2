@@ -6,6 +6,8 @@
     font: $openSans_18;
     color: $gunmetal;
     margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
   }
   &__container {
     width: 100%;
