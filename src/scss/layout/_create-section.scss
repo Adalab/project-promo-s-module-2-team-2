@@ -41,12 +41,20 @@
             border-left: solid 5px $dirty-blue;
             padding-left: 15px;
                 &--title {
-                    font: $montserrat_18_700;
-                    /*line-height: 20;*/
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    font-size: 18px;
+                    /*font: $montserrat_18_700;*/
+                    line-height: 20px;
+                    margin-bottom: 4px;
                     color: $dark-green-blue;
                 }
-                &__subtitle {
-                    font: $montserrat_16;
+                &--subtitle {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    /*font: $montserrat_16_400;*/
                     color: $gunmetal;
                 }
         }
