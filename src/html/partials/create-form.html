@@ -1,6 +1,6 @@
 <form class="form" action="#" method="post">
   <fieldset class="design">
-    <legend class="design__header" title="">
+    <legend class="design__header" title="Despliega el menú">
       <h3 class="design__title">
         <div class="container__title">
           <i class="fa-regular fa-object-ungroup"></i>
@@ -16,10 +16,11 @@
     <div class="design__container">
       <label class="design__label" for="colors">COLORES </label>
       <input
-        class="design__input--one"
+        class="design__input"
         id="colors"
         type="radio"
         name="colors"
+        checked
       />
       <div class="design__container--colors1">
         <div class="colors--one"></div>
@@ -27,24 +28,14 @@
         <div class="colors--three"></div>
       </div>
 
-      <input
-        class="design__input--two"
-        id="colors"
-        type="radio"
-        name="colors"
-      />
+      <input class="design__input" id="colors" type="radio" name="colors" />
       <div class="design__container--colors2">
         <div class="colors--four"></div>
         <div class="colors--five"></div>
         <div class="colors--six"></div>
       </div>
 
-      <input
-        class="design__input--three"
-        id="colors"
-        type="radio"
-        name="colors"
-      />
+      <input class="design__input" id="colors" type="radio" name="colors" />
       <div class="design__container--colors3">
         <div class="colors--seven"></div>
         <div class="colors--eight"></div>
@@ -54,17 +45,18 @@
   </fieldset>
 
   <fieldset class="fill">
-    <h3 class="fill__title">
-      <div class="container__title">
-        <i class="fa-regular fa-keyboard"></i>
-        RELLENA
-      </div>
-      <div class="container__angle">
-        <i class="fa-solid fa-angle-down"></i>
-        <i class="fa-solid fa-angle-up"></i>
-      </div>
-    </h3>
-
+    <legend class="fill__header" title="Despliega el menú">
+      <h3 class="fill__title">
+        <div class="container__title">
+          <i class="fa-regular fa-keyboard"></i>
+          RELLENA
+        </div>
+        <div class="container__angle">
+          <i class="fa-solid fa-angle-down"></i>
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+      </h3>
+    </legend>
     <label class="fill__label" for="full_name">Nombre completo</label>
     <input
       class="fill__input"
@@ -129,16 +121,18 @@
     />
   </fieldset>
   <fieldset class="share">
-    <h3 class="share__title">
-      <div class="container__title">
-        <i class="fa-solid fa-share-nodes"></i>
-        COMPARTE
-      </div>
-      <div class="container__angle">
-        <i class="fa-solid fa-angle-down"></i>
-        <i class="fa-solid fa-angle-up"></i>
-      </div>
-    </h3>
+    <legend class="share__header" title="Despliega el menú">
+      <h3 class="share__title">
+        <div class="container__title">
+          <i class="fa-solid fa-share-nodes"></i>
+          COMPARTE
+        </div>
+        <div class="container__angle">
+          <i class="fa-solid fa-angle-down"></i>
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+      </h3>
+    </legend>
     <div class="share__container--one">
       <button class="share__button--create">
         <i class="fa-regular fa-address-card"></i>

@@ -5,12 +5,15 @@
   &__title {
     font: $openSans_18;
     color: $gunmetal;
-    margin-bottom: 22px;
     display: flex;
     justify-content: space-between;
   }
-  &__container {
+  &__header {
     width: 100%;
+    cursor: pointer;
+  }
+  &__container {
+    margin-top: 22px;
     display: grid;
     grid-template-columns: 55% 10% 35%;
     grid-template-areas:
@@ -23,6 +26,9 @@
     font: $openSans_14;
     grid-area: title;
     margin-left: 19px;
+  }
+  &__input {
+    cursor: pointer;
   }
   .colors--one {
     display: inline-block;

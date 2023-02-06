@@ -4,11 +4,16 @@
   &__title {
     font: $openSans_18;
     color: $gunmetal;
-    margin: 10px 0 25px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
   }
+  &__header {
+    width: 100%;
+    cursor: pointer;
+  }
   &__label {
+    margin-top: 25px;
     font: $openSans_14;
     line-height: 20px;
     color: $dark-green-blue;
@@ -24,9 +29,9 @@
       width: 50%;
       color: $white-two;
       font: $openSans_14;
-      margin-bottom: 20px;
       border-radius: 3px;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+      cursor: pointer;
     }
     &--box {
       width: 30px;
@@ -40,7 +45,6 @@
     }
   }
   &__input {
-    margin-bottom: 20px;
     border: solid 1px $hospital-green;
     width: 100%;
     height: 30px;
