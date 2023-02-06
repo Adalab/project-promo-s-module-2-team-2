@@ -10,7 +10,7 @@
 }
 
 .reset__button{
-    align-self: start;
+    transform: translateX(-110%);
     width: 75px;
     height: 30px;
     border: solid 1px $white-two;
@@ -27,7 +27,7 @@
 .card{
     background-color: $white-two;
     width: 240px;
-    height: 329px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
