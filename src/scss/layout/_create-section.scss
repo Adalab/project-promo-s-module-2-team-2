@@ -69,29 +69,29 @@
 }
 
 .socials1 {
-    padding-left: 20px;
-    display: flex;
-    flex-direction: row;
-        &__mobile,
-        &__mail,
-        &__linkedin,
-        &__github {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: solid 2px $hospital-green;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            margin: 5px;
-                &--link {
-                    display: flex;
-                    justify-content: center;
-                    cursor: pointer;
-                    text-decoration: none;
-                    color: $dark-green-blue;
-                }
-        }
+        padding-left: 20px;
+        display: flex;
+        flex-direction: row;
+            &__mobile,
+            &__mail,
+            &__linkedin,
+            &__github {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: solid 2px $hospital-green;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                margin: 5px;
+                    &--link {
+                        display: flex;
+                        justify-content: center;
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: $dark-green-blue;
+                    }
+            }
 }
 
 /*-----------------CARD2--------------------*/
