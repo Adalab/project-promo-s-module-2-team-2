@@ -17,6 +17,7 @@
     border-radius: 15px;
     background-color: $silver;
     margin-bottom: 20px;
+    cursor: pointer;
         &--link {
             text-decoration: none;
             color: $gunmetal;
@@ -33,7 +34,6 @@
     justify-content: center;
     align-items: left;
     box-shadow: 10px $black-20;
-
         &__info {
             width: 240px;
             height: 44px;
@@ -50,7 +50,6 @@
                     color: $gunmetal;
                 }
         }
-
         &__img {
             width: 240px;
             height: 200px;    
@@ -72,6 +71,7 @@
             border-radius: 50%;
             margin: 5px;
                 &--link {
+                cursor: pointer;
                 text-decoration: none;
                 color: $dark-green-blue;
                     .fa-solid,
