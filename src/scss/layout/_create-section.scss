@@ -10,6 +10,7 @@
 }
 
 .reset__button{
+    align-self: start;
     width: 75px;
     height: 30px;
     border: solid 1px $white-two;
@@ -21,8 +22,6 @@
             color: $gunmetal;
             text-transform: uppercase;
         }
-
-
 }
 
 .card{
@@ -35,21 +34,32 @@
     align-items: left;
     box-shadow: 10px $black-20;
 
-        &__title {
-            font: $montserrat_18_700;
-            /*line-height: 20;*/
-            color: $dark-green-blue;
+        &__info {
+            width: 240px;
+            height: 44px;
+            margin: 23px 0 10px 0;
+            border-left: solid 5px $dirty-blue;
+            padding-left: 15px;
+                &--title {
+                    font: $montserrat_18_700;
+                    /*line-height: 20;*/
+                    color: $dark-green-blue;
+                }
+                &__subtitle {
+                    font: $montserrat_16;
+                    color: $gunmetal;
+                }
         }
-        &__subtitle {
-            font: $montserrat_16;
-            color: $gunmetal;
-        }
+
         &__img {
-        /*tamaño y cover cuando sea foto de verdad*/    
+            width: 240px;
+            height: 200px;    
+
         }
 }
 
 .socials {
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
         &__mobile,
