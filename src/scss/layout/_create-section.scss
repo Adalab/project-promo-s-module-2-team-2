@@ -34,28 +34,38 @@
     justify-content: center;
     align-items: left;
     box-shadow: 2px 5px 5px $black-20;
-        &__info {
-            width: 240px;
-            height: 44px;
-            margin: 23px 0 10px 0;
-            border-left: solid 5px $dirty-blue;
-            padding-left: 15px;
-                &--title {
-                    /*font: $montserrat_18_700;*/
-                    
-                    line-height: 20;
-                    color: $dark-green-blue;
-                }
-                &__subtitle {
-                    font: $montserrat_16;
-                    color: $gunmetal;
-                }
+
+    &__info {
+        width: 240px;
+        height: 44px;
+        margin: 23px 0 10px 0;
+        border-left: solid 5px $dirty-blue;
+        padding-left: 15px;
+
+        &--title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            /*font: $montserrat_18_700;*/
+            line-height: 20px;
+            margin-bottom: 4px;
+            color: $dark-green-blue;
         }
+
+        &--subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            /*font: $montserrat_16_400;*/
+            color: $gunmetal;
+        }
+    }
+
         &__img {
             width: 240px;
-            height: 200px;    
-
-        }
+            height: 200px;
+            }
 }
 
 .socials1 {
