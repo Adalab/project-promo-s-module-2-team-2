@@ -101,24 +101,20 @@
 
 .card__info.palette2 {
     border-left: solid 5px $rusty-red;
+    .card__info--title {
+        color: $dried-blood;
+    }
 }
 
-.card__info--title.palette2 {
-    color: $dried-blood;
+.socials.palette2 {
+        .socials__mobile,
+        .socials__mail,
+        .socials__linkedin,
+        .socials__github {
+            border: solid 2px $tomato;
+            color: $dried-blood;
+        }
 }
-
-.card__image.pallete2 {
-    background-image: url(../images/card2.png);
-}
-
-.socials__mobile.palette2,
-.socials__mail.palette2,
-.socials__linkedin.palette2,
-.socials__github.palette2 {
-    border: solid 2px $tomato;
-    color: $dried-blood;
-}
-
 /*-----------------PALETTE3--------------------*/
 
 .background.palette3 {
@@ -127,21 +123,17 @@
 
 .card__info.palette3 {
     border-left: solid 5px $faded-orange;
+    .card__info--title {
+        color: $slate;
+    }
 }
 
-.card__info--title.palette3 {
-    color: $slate;
+.socials.palette3 {
+    .socials__mobile,
+    .socials__mail,
+    .socials__linkedin,
+    .socials__github {
+        border: solid 2px $light-grey-blue;
+        color: $slate;
+    }
 }
-
-.card__image.pallete3 {
-    background-image: url(../images/card3.png);
-}
-
-.socials__mobile.palette3,
-.socials__mail.palette3,
-.socials__linkedin.palette3,
-.socials__github.palette3 {
-    border: solid 2px $light-grey-blue;
-    color: $slate;
-}
-
