@@ -133,104 +133,34 @@
 
 
 /*-----------------PALETTE3--------------------*/
-/*
-.background3 {
-    width: 100%;
-    height: 457px;
+
+.background.palette3 {
     background-image: linear-gradient(to bottom, #edcf9f, #e7d9c2 80%);
-    padding: 38px 35px 40px 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.reset__button3 {
-    transform: translateX(-110%);
-    width: 75px;
-    height: 30px;
-    border: solid 1px $white-two;
-    border-radius: 15px;
-    background-color: #edcf9f;
-    margin-bottom: 20px;
-    cursor: pointer;
-
-    &--link {
-        text-decoration: none;
-        color: $gunmetal;
-        text-transform: uppercase;
-    }
+.card__info.palette3 {
+    border-left: solid 5px $faded-orange;
 }
 
-.card3 {
-    background-color: $white-two;
-    width: 240px;
-    height: 329px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    box-shadow: 2px 5px 5px $black-20;
-    
-    &__info {            
-        width: 240px;
-        height: 44px;
-        margin: 23px 0 10px 0;
-        border-left: solid 5px $faded-orange;
-        padding-left: 15px;
-    
-        &--title {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 18px;                            
-            line-height: 20px;
-            margin-bottom: 4px;
-            color: $slate;
-        }
-    
-        &--subtitle {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 20px;
-            color: $gunmetal;
-        }
-    }
-    
-    &__image {
-        width: 240px;
-        height: 200px;
-        background-image: url(../images/card3.png);
-        background-position: center;
-        object-fit: cover;
-    }
+.card__info--title.palette3 {
+    color: $slate;
 }
 
-.socials3 {
-    padding-left: 20px;
-    display: flex;
-    flex-direction: row;
-    
-    &__mobile,
-    &__mail,
-    &__linkedin,
-    &__github {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: solid 2px $light-grey-blue;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        margin: 5px;
-    
-        &--link {
-            display: flex;
-            justify-content: center;
-            cursor: pointer;
-            text-decoration: none;
-            color: $slate;
-        }
-    }
+.card__image.pallete3 {
+    background-image: url(../images/card3.png);
 }
-*/
+
+.socials__mobile.palette3,
+.socials__mail.palette3,
+.socials__linkedin.palette3,
+.socials__github.palette2 {
+    border: solid 2px $light-grey-blue;
+}
+
+.socials__mobile--link.palette3,
+.socials__mail--link.palette3,
+.socials__linkedin--link.palette3,
+.socials__github--link.palette3 {
+    color: $slate;
+}
+
