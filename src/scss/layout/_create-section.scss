@@ -38,7 +38,7 @@
     &__info {
         width: 240px;
         height: 44px;
-        margin: 23px 0 10px 0;
+        margin-bottom: 10px;
         border-left: solid 5px $dirty-blue;
         padding-left: 15px;
 
@@ -72,28 +72,24 @@
 .socials {
     padding-left: 20px;
     display: flex;
-    flex-direction: row;
+    list-style-type: none;
+    
 
     &__mobile,
     &__mail,
     &__linkedin,
     &__github {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: solid 2px $hospital-green;
+        display: block;
+        padding-top: 6px;
+        border-radius: 50%;
         width: 32px;
         height: 32px;
-        border-radius: 50%;
-        margin: 5px;
-
-        &--link {
-            display: flex;
-            justify-content: center;
-            cursor: pointer;
-            text-decoration: none;
-            color: $dark-green-blue;
-        }
+        border: solid 2px $hospital-green;
+        text-align: center;
+        margin: 4px;
+        text-decoration: none;
+        color: $dark-green-blue;
+        cursor: pointer;
     }
 }
 
@@ -123,13 +119,6 @@
     color: $dried-blood;
 }
 
-.socials__mobile--link.palette2,
-.socials__mail--link.palette2,
-.socials__linkedin--link.palette2,
-.socials__github--link.palette2 {
-    color: $dried-blood;
-}
-
 /*-----------------PALETTE3--------------------*/
 
 .background.palette3 {
@@ -153,11 +142,6 @@
 .socials__linkedin.palette3,
 .socials__github.palette3 {
     border: solid 2px $light-grey-blue;
-}
-
-.socials__mobile--link.palette3,
-.socials__mail--link.palette3,
-.socials__linkedin--link.palette3,
-.socials__github--link.palette3 {
     color: $slate;
 }
+
