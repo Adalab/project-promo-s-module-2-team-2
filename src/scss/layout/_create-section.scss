@@ -129,3 +129,35 @@
 .socials__github--link.palette2 {
     color: $dried-blood;
 }
+
+/*-----------------PALETTE3--------------------*/
+
+.background.palette3 {
+    background-image: linear-gradient(to bottom, #edcf9f, #e7d9c2 80%);
+}
+
+.card__info.palette3 {
+    border-left: solid 5px $faded-orange;
+}
+
+.card__info--title.palette3 {
+    color: $slate;
+}
+
+.card__image.pallete3 {
+    background-image: url(../images/card3.png);
+}
+
+.socials__mobile.palette3,
+.socials__mail.palette3,
+.socials__linkedin.palette3,
+.socials__github.palette3 {
+    border: solid 2px $light-grey-blue;
+}
+
+.socials__mobile--link.palette3,
+.socials__mail--link.palette3,
+.socials__linkedin--link.palette3,
+.socials__github--link.palette3 {
+    color: $slate;
+}
