@@ -1,4 +1,15 @@
-/*.background1{
+.background1 {
+    display:none
+}
+.background2.collapsed {
+    display: none
+}
+.background3.collapsed {
+    display: none
+}
+
+/*-------------------------PALETTE1--------------------*/
+.background1{
     width: 100%;
     height: 457px;
     background-image: linear-gradient(to bottom, $silver, $pale-grey 80%);
@@ -9,7 +20,7 @@
     align-items: center;
 }
 
-.reset__button{
+.reset__button1{
     transform: translateX(-110%);
     width: 75px;
     height: 30px;
@@ -60,10 +71,13 @@
         }
     }
 
-        &__image {
-            width: 240px;
-            height: 200px;
-            }
+    &__image {
+        width: 240px;
+        height: 200px;
+        background-image: url(../images/card.png);
+        background-position: center;
+        object-fit: cover;
+    }
 }
 
 .socials1 {
@@ -92,15 +106,11 @@
             }
 }
 
-.collapsed__image2 {
-    display: none;
-}
 
-.collapsed__image3 {
-    display: none;
-}*/
 
-/*-----------------CARD2--------------------*/
+
+
+/*-----------------PALETTE2--------------------*/
 
 .background2 {
     width: 100%;
@@ -113,7 +123,7 @@
     align-items: center;
 }
 
-.reset__button {
+.reset__button2 {
     transform: translateX(-110%);
     width: 75px;
     height: 30px;
@@ -168,6 +178,9 @@
     &__image {
         width: 240px;
         height: 200px;
+        background-image: url(../images/card2.png);
+        background-position: center;
+        object-fit: cover;
     }
 }
 
@@ -199,17 +212,9 @@
     }
 }
 
-.collapsed__image1 {
-    display: none;
-}
+/*-----------------PALETTE3--------------------*/
 
-.collapsed__image3 {
-    display: none;
-}
-
-/*-----------------CARD3--------------------*/
-
-/*.background3 {
+.background3 {
     width: 100%;
     height: 457px;
     background-image: linear-gradient(to bottom, #edcf9f, #e7d9c2 80%);
@@ -220,7 +225,7 @@
     align-items: center;
 }
 
-.reset__button {
+.reset__button3 {
     transform: translateX(-110%);
     width: 75px;
     height: 30px;
@@ -272,9 +277,12 @@
         }
     }
     
-    &__image {            
+    &__image {
         width: 240px;
         height: 200px;
+        background-image: url(../images/card3.png);
+        background-position: center;
+        object-fit: cover;
     }
 }
 
@@ -305,11 +313,3 @@
         }
     }
 }
-
-.collapsed__image1 {
-    display: none;
-}
-
-.collapsed__image2 {
-    display: none;
-}*/
