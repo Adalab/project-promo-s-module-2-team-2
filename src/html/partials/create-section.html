@@ -1,4 +1,4 @@
-<section class="background">
+<section class="background js-background">
 
     <button class="reset__button" title="Resets content">
         <a href="#" class="reset__button--link">
@@ -8,8 +8,8 @@
     </button>
 
     <article class="card">
-        <div class="card__info">
-            <h2 class="card__info--title">
+        <div class="card__info js-bordercolor">
+            <h2 class="card__info--title js-name">
                 Nombre Apellido
             </h2>
 
@@ -18,29 +18,29 @@
             </h3>
         </div>
 
-        <div class="card__image" title="customer's photo"></div>
+        <div class="card__image js-image" title="customer's photo"></div>
 
         <div class="socials">
 
-            <div class="socials__mobile" title="Phone number">
+            <div class="socials__mobile js-number" title="Phone number">
                 <a href="#" class="socials__mobile--link">
                     <i class="fa-solid fa-mobile-screen"></i>
                 </a>
             </div>
 
-            <div class="socials__mail" title="Email address">
+            <div class="socials__mail js-mail" title="Email address">
                 <a href="#" class="socials__mail--link socials2__mail--link socials3__mail--link">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
 
-            <div class="socials__linkedin" title="Link to LinkedIn">
+            <div class="socials__linkedin js-linkedin" title="Link to LinkedIn">
                 <a href="#" class="socials__linkedin--link">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </div>
 
-            <div class="socials__github" title="Link to GitHub">
+            <div class="socials__github js-github" title="Link to GitHub">
                 <a href="#" class="socials__github--link">
                     <i class="fa-brands fa-github-alt"></i>
                 </a>
@@ -50,3 +50,15 @@
 
     </article>
 </section>
+
+<!--JS classes needed for the different palettes:
+    const backgroundColor = document.querySelector('.js-background');
+    const coloredBorder = document.querySelector('.js-bordercolor');
+    const nameColor = document.querySelector('.js-name');
+    const image = document.querySelector('.js-image');
+    const phoneColor = document.querySelector('.js-number');
+    const mailColor = document.querySelector('.js-mail');
+    const linkedinColor = document.querySelector('.js-linkedin');
+    const githubColor = document.querySelector('.js-github');
+
+-->
