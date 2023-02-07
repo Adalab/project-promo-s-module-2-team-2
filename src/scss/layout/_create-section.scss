@@ -96,3 +96,36 @@
         }
     }
 }
+
+/*-----------------PALETTE2--------------------*/
+
+.background.palette2 {
+    background-image: linear-gradient(to bottom, #f4bba9, #f2dad2 80%);
+}
+
+.card__info.palette2 {
+    border-left: solid 5px $rusty-red;
+}
+
+.card__info--title.palette2 {
+    color: $dried-blood;
+}
+
+.card__image.pallete2 {
+    background-image: url(../images/card2.png);
+}
+
+.socials__mobile.palette2,
+.socials__mail.palette2,
+.socials__linkedin.palette2,
+.socials__github.palette2 {
+    border: solid 2px $tomato;
+    color: $dried-blood;
+}
+
+.socials__mobile--link.palette2,
+.socials__mail--link.palette2,
+.socials__linkedin--link.palette2,
+.socials__github--link.palette2 {
+    color: $dried-blood;
+}
