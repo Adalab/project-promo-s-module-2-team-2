@@ -5,8 +5,10 @@
     padding: 7px 0 0 0;
     width: 55%;
   }
+  @media all and (min-width: 1024px) {
+    width: 38%;
+  }
 }
-
 .fa-object-ungroup,
 .fa-share-nodes,
 .fa-keyboard {

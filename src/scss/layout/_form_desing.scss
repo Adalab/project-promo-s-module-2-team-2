@@ -15,20 +15,24 @@
   &__container {
     margin-top: 22px;
     display: grid;
-    grid-template-columns: 55% 10% 35%;
-    grid-template-areas:
-      "title radio1 colors1"
-      "title radio2 colors2"
-      "title radio3 colors3";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     justify-items: start;
+
+    &--colors1,
+    &--colors2,
+    &--colors3 {
+      justify-self: right;
+    }
   }
   &__label {
     font: $openSans_14;
-    grid-area: title;
+    grid-row: 1/4;
     margin-left: 19px;
   }
   &__input {
     cursor: pointer;
+    transform: translateY(-40%);
   }
   .colors--one {
     display: inline-block;

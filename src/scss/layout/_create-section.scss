@@ -9,6 +9,9 @@
     width: 45%;
     height: auto;
   }
+  @media all and (min-width: 1024px) {
+    width: 62%;
+  }
 }
 
 .reset__button {
