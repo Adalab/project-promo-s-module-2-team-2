@@ -48,8 +48,20 @@ function handleInputNumber(event) {
   linkNumber.href = `tel:${numberWritten}`;
 }
 
+function handleInputLinkedin(event) {
+  const linkedinWritten = inputLinkedin.value;
+  linkLinkedin.href = linkedinWritten;
+}
+
+function handleInputGithub(event) {
+  const githubWritten = inputGithub.value;
+  linkGithub.href = githubWritten;
+}
+
 inputName.addEventListener('input', handleInputName);
 inputJob.addEventListener('input', handleInputJob);
 
 inputNumber.addEventListener('input', handleInputNumber);
 inputEmail.addEventListener('input', handleInputEmail);
+inputLinkedin.addEventListener('input', handleInputLinkedin);
+inputGithub.addEventListener('input', handleInputGithub);
