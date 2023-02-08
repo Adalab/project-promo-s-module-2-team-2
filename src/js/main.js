@@ -1,12 +1,8 @@
 'use strict';
 
-/*JS classes needed for the different palettes:
-
-    const backgroundColor = document.querySelector('.js-background');
-    const info = document.querySelector('.js-info');
-    const socials = document.querySelector('.js-socials');
-
-*/
+const backgroundColor = document.querySelector('.js-background');
+const info = document.querySelector('.js-info');
+const socials = document.querySelector('.js-socials');
 
 const inputName = document.querySelector('.js-input-name');
 const inputJob = document.querySelector('.js-input-job');
@@ -22,7 +18,7 @@ const linkEmail = document.querySelector('.js-preview-email');
 const linkLinkedin = document.querySelector('.js-preview-linkedin');
 const linkGithub = document.querySelector('.js-preview-github');
 
-function handleInputName(event){
+function handleInputName(event) {
 const nameWritten = inputName.value;
 
 	if nameWritten === ('') {
@@ -32,11 +28,11 @@ const nameWritten = inputName.value;
 	}
 }
 
-function handleInputEmail(event){
+function handleInputEmail(event) {
 const emailWritten = inputEmail.value;
 linkEmail.href = `mailto:${emailWritten}`;
-};
+}
 
-inputName.addEventListener ('input', handleInputName);
+inputName.addEventListener('input', handleInputName);
 
-inputEmail.addEventListener ('input', handleInputEmail);
+inputEmail.addEventListener('input', handleInputEmail);
