@@ -1,6 +1,6 @@
 # Awesome profile cards
 
-For this second module of the bootcamp we had to copy a websithe wich design was provided to the team and we had to make it work using our knowledge about JavaScript ensemble with the HTML, CSS and SASS learned on the previous module.
+For this second module of the bootcamp we had to copy a website whose design was provided to the team and we had to make it work using our knowledge about JavaScript ensemble with the HTML, CSS and SASS learned on the previous module.
 
 ## Team members:
 
