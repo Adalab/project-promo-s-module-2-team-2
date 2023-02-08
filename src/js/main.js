@@ -19,18 +19,18 @@ const linkLinkedin = document.querySelector('.js-preview-linkedin');
 const linkGithub = document.querySelector('.js-preview-github');
 
 function handleInputName(event) {
-const nameWritten = inputName.value;
+const namewritten = inputName.value;
 
-	if nameWritten === ('') {
+	if namewritten === ('') {
 	previewName.innerHTML = 'Nombre Apellidos';
 	} else {
-	previewName.innerHTML = nameWritten;
+	previewName.innerHTML = namewritten;
 	}
 }
 
 function handleInputEmail(event) {
-const emailWritten = inputEmail.value;
-linkEmail.href = `mailto:${emailWritten}`;
+const emailwritten = inputEmail.value;
+linkEmail.href = `mailto:${emailwritten}`;
 }
 
 inputName.addEventListener('input', handleInputName);
