@@ -139,3 +139,39 @@
     }
 }
 
+@media all and (min-width: 768px) {
+
+.main {
+
+    border: 2px solid orange;
+
+    &__title {
+        padding-bottom: 30px;
+        padding-top: 20px;
+    }
+
+    &__box {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 325px;
+        height: 86px;
+    }
+
+    &__button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        padding-top: 8px;  
+    }    
+  
+}
+
+}
+
+@media all and (min-width: 1024px) {
+
+.main {
+
+}
+
+}
