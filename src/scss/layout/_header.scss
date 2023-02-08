@@ -1,30 +1,21 @@
 .header {
-
-    display: flex;
-    justify-content: center;
-    height: 35vh;
-    
-
+  display: flex;
+  justify-content: center;
+  height: 35vh;
+  background-color: $white-four;
 }
 .logo-awesome-profile-cards {
-
-    width: 250px;
-    height: 64px;
-    margin: 22vh 0 0 ;
+  width: 250px;
+  height: 64px;
+  margin: 22vh 0 0;
 }
 
 @media all and (min-width: 1024px) {
+  .header {
+  }
 
-    .header {
-    
-           
-    
-        }
-    
-        .logo-awesome-profile-cards {
-    
-            width: 201px;
-            height: 50px;
-            
-        }
+  .logo-awesome-profile-cards {
+    width: 201px;
+    height: 50px;
+  }
 }

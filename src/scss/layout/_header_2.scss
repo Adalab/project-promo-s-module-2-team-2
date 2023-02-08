@@ -2,9 +2,15 @@
   display: flex;
   justify-content: center;
   padding: 31px 79px 30px 40px;
+  @media all and (min-width: 768px) {
+    justify-content: left;
+  }
 }
-
 .logo-awesome-profile-cards_2 {
   width: 250px;
   height: 63px;
+  @media all and (min-width: 768px) {
+    width: 201px;
+    height: 50px;
+  }
 }
