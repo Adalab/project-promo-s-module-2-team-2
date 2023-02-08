@@ -28,11 +28,28 @@ function handleInputName(event) {
   }
 }
 
+function handleInputJob(event) {
+  const jobWritten = inputJob.value;
+
+  if (jobWritten === '') {
+    previewJob.innerHTML = 'Front-end Developer';
+  } else {
+    previewJob.innerHTML = jobWritten;
+  }
+}
+
 function handleInputEmail(event) {
   const emailWritten = inputEmail.value;
   linkEmail.href = `mailto:${emailWritten}`;
 }
 
-inputName.addEventListener('input', handleInputName);
+function handleInputNumber(event) {
+  const numberWritten = inputNumber.value;
+  linkNumber.href = `tel:${numberWritten}`;
+}
 
+inputName.addEventListener('input', handleInputName);
+inputJob.addEventListener('input', handleInputJob);
+
+inputNumber.addEventListener('input', handleInputNumber);
 inputEmail.addEventListener('input', handleInputEmail);
