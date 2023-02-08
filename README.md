@@ -4,11 +4,11 @@ For this second module of the bootcamp we had to copy a websithe wich design was
 
 ## Team members:
 
-- Beatriz Figueroa
-- Pilar Leiva
-- Verónica Velasco
-- Titika Apostolaki
-- Vanesa González
+- Beatriz Figueroa @beafig
+- Pilar Leiva @Pilarleizq
+- Verónica Velasco @veronicavjones
+- Titika Apostolaki @ttkapostol
+- Vanesa González @VanesaGR
 
 ## Awesome profile cards website:
 
@@ -18,6 +18,6 @@ Our website includes a home page, where the using of the web is described and an
 
 This project was supervised by the bootcamp instructors:
 
-- Dayana Romero
-- Iván Garrido
-- Yanelis Serrano
+- Dayana Romero @dayanare
+- Iván Garrido @igarrido-adalab
+- Yanelis Serrano @ytaylordev
