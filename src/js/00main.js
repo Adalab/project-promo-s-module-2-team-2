@@ -1,5 +1,51 @@
 'use strict';
 
+//VARIABLES COLLAPSABLES
+
+const designLegend = document.querySelector('.js-design-legend');
+const down1 = document.querySelector('.js-down1');
+const up1 = document.querySelector('.js-up1');
+const design = document.querySelector('.js-design');
+
+const fillLegend = document.querySelector('.js-fill-legend');
+const down2 = document.querySelector('.js-down2');
+const up2 = document.querySelector('.js-up2');
+const fill = document.querySelector('.js-fill');
+
+const shareLegend = document.querySelector('.js-share-legend');
+const down3 = document.querySelector('.js-down3');
+const up3 = document.querySelector('.js-up3');
+const share = document.querySelector('.js-share');
+
+
+// FUNCIONES COLLAPSABLES
+function handleDesign(event) {
+  fill.classList.add('collapsable');
+  share.classList.add('collapsable');
+  design.classList.remove('collapsable');
+}
+
+function handleFill(event) {
+  design.classList.add('collapsable');
+  share.classList.add('collapsable');
+  fill.classList.remove('collapsable');
+
+}
+
+function handleShare(event) {
+  design.classList.add('collapsable');
+  fill.classList.add('collapsable');
+  share.classList.remove('collapsable');
+}
+
+// EVENTOS COLLAPSABLES
+
+designLegend.addEventListener('click', handleDesign)
+fillLegend.addEventListener('click', handleFill)
+shareLegend.addEventListener('click', handleShare)
+
+
+
 //VARIABLES PALETTES
 const background = document.querySelector('.js-background');
 const info = document.querySelector('.js-info');
@@ -11,43 +57,43 @@ const radio3 = document.querySelector('.js-palette3');
 
 //FUNCIONES PALETTES
 function handleRadio1(event) {
-    console.log('fiestaaaaa');
-if (background.classList.contains('palette3') && info.classList.contains('palette3') && socials.classList.contains('palette3')) 
-  {background.classList.remove('palette3');
-   info.classList.remove('palette3');
-   socials.classList.remove('palette3');
+  console.log('fiestaaaaa');
+  if (background.classList.contains('palette3') && info.classList.contains('palette3') && socials.classList.contains('palette3')) {
+    background.classList.remove('palette3');
+    info.classList.remove('palette3');
+    socials.classList.remove('palette3');
   }
-if (background.classList.contains('palette2') && info.classList.contains('palette2') && socials.classList.contains('palette2')) 
-  {background.classList.remove('palette2');
-   info.classList.remove('palette2');
-   socials.classList.remove('palette2');
+  if (background.classList.contains('palette2') && info.classList.contains('palette2') && socials.classList.contains('palette2')) {
+    background.classList.remove('palette2');
+    info.classList.remove('palette2');
+    socials.classList.remove('palette2');
   }
 }
 
 function handleRadio2(event) {
-    console.log('esperaaaaaanza');
- background.classList.add('palette2'); 
- info.classList.add('palette2'); 
- socials.classList.add('palette2');
-  if (background.classList.contains('palette3') && info.classList.contains('palette3') && socials.classList.contains('palette3')) 
-  {background.classList.remove('palette3');
-   info.classList.remove('palette3');
-   socials.classList.remove('palette3');
+  console.log('esperaaaaaanza');
+  background.classList.add('palette2');
+  info.classList.add('palette2');
+  socials.classList.add('palette2');
+  if (background.classList.contains('palette3') && info.classList.contains('palette3') && socials.classList.contains('palette3')) {
+    background.classList.remove('palette3');
+    info.classList.remove('palette3');
+    socials.classList.remove('palette3');
   }
 }
 
 function handleRadio3(event) {
-    console.log('somos las mejores');
- background.classList.add('palette3'); 
- info.classList.add('palette3'); 
- socials.classList.add('palette3');
+  console.log('somos las mejores');
+  background.classList.add('palette3');
+  info.classList.add('palette3');
+  socials.classList.add('palette3');
 }
 
 //EVENTOS PALETTES
 radio1.addEventListener('click', handleRadio1);
 radio2.addEventListener('click', handleRadio2);
 radio3.addEventListener('click', handleRadio3);
- 
+
 //VARIABLES INPUT-PREVIEW
 const inputName = document.querySelector('.js-input-name');
 const inputJob = document.querySelector('.js-input-job');

@@ -1,3 +1,7 @@
+.collapsable {
+  display: none;
+}
+
 @media all and (min-width: 768px) {
   .create__main {
     display: flex;
