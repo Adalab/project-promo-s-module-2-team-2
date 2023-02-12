@@ -21,9 +21,10 @@ footer {
 }
 
 .adalab_logo {
-  width: 103px;
-  height: 40px;
-  margin-top: 12px;
+  width: 150px;
+  height: 56px;
+  margin-top: 8px;
+  border: 1px dashed $dull-orange-op;
 }
 
 @media all and (min-width: 768px) {
