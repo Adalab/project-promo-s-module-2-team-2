@@ -69,14 +69,17 @@
   &__image {
     width: 240px;
     height: 200px;
-    background-image: url(../images/card.png);
+    background-image: url(../images/totoro.png);
+    /*background-position: center; con object-fit: cover*/
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    object-fit: cover;
   }
 }
 
 .socials {
   padding-left: 20px;
+  margin-top: 3px;
   display: flex;
   list-style-type: none;
 
@@ -85,6 +88,7 @@
   &__linkedin,
   &__github {
     display: block;
+    
     padding-top: 6px;
     border-radius: 50%;
     width: 32px;
