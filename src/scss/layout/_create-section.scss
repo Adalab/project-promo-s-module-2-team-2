@@ -7,11 +7,11 @@
   align-items: center;
   @media all and (min-width: 768px) {
     width: 45%;
+    min-height: 440px;
     height: auto;
   }
   @media all and (min-width: 1024px) {
     width: 62%;
-    min-height: 440px;
   }
 }
 
