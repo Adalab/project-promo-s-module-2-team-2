@@ -1,6 +1,6 @@
 .design {
   border-bottom: solid 1px $white-three;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 
   &__title {
     font: $openSans_18;
@@ -18,15 +18,12 @@
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: start;
-    &--colors1,
-    &--colors2 {
-      margin-bottom: 20px;
-    }
 
     &--colors1,
     &--colors2,
     &--colors3 {
       justify-self: right;
+      margin-bottom: 20px;
     }
   }
   &__label {
