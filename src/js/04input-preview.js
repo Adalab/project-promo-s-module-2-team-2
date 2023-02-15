@@ -22,22 +22,36 @@ function handleInputJob(event) {
 
 function handleInputEmail(event) {
   const emailWritten = inputEmail.value;
-  linkEmail.href = `mailto:${emailWritten}`;
+  if (emailWritten !== '') {
+    linkEmail.classList.remove('socials__disabled');
+    linkEmail.href = `mailto:${emailWritten}`;
+  };
 }
 
 function handleInputNumber(event) {
   const numberWritten = inputNumber.value;
-  linkNumber.href = `tel:${numberWritten}`;
+  if (numberWritten !== '') {
+    linkNumber.classList.remove('socials__disabled');
+    linkNumber.href = `tel:${numberWritten}`;
+  };
+
 }
 
 function handleInputLinkedin(event) {
   const linkedinWritten = inputLinkedin.value;
-  linkLinkedin.href = linkedinWritten;
+  if (linkedinWritten !== '') {
+    linkLinkedin.classList.remove('socials__disabled');
+    linkLinkedin.href = linkedinWritten;;
+  };
+
 }
 
 function handleInputGithub(event) {
   const githubWritten = inputGithub.value;
-  linkGithub.href = githubWritten;
+  if (githubWritten !== '') {
+    linkGithub.classList.remove('socials__disabled');
+    linkGithub.href = githubWritten;
+  };
 }
 
 //EVENTOS INPUT-PREVIEW

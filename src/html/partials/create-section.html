@@ -1,49 +1,55 @@
 <section class="background js-background">
+  <button class="reset__button" title="Resets content">
+    <a href="#" class="reset__button--link">
+      <i class="fa-regular fa-trash-can"></i>
+      Reset
+    </a>
+  </button>
 
-    <button class="reset__button" title="Resets content">
-        <a href="#" class="reset__button--link">
-            <i class="fa-regular fa-trash-can"></i>
-            Reset
-        </a>
-    </button>
+  <article class="card">
+    <div class="card__info js-info">
+      <h2 class="card__info--title js-preview-name">Nombre Apellido</h2>
+      <h3 class="card__info--subtitle js-preview-job">Front-end Developer</h3>
+    </div>
 
-    <article class="card">
-        <div class="card__info js-info">
-            <h2 class="card__info--title js-preview-name">
-                Nombre Apellido
-            </h2>
-            <h3 class="card__info--subtitle js-preview-job">
-                Front-end Developer
-            </h3>
-        </div>
+    <div class="card__image" title="customer's photo"></div>
 
-        <div class="card__image" title="customer's photo"></div>
+    <nav class="socials js-socials">
+      <a
+        href=""
+        class="socials__mobile socials__disabled js-preview-number"
+        target="_blank"
+        title="Phone Number"
+      >
+        <i class="fa-solid fa-mobile-screen"></i>
+      </a>
 
-        <nav class="socials js-socials">
-            <a href="" class="socials__mobile js-preview-number" target="_blank" title="Phone Number">
-                <i class="fa-solid fa-mobile-screen"></i>
-            </a>
+      <a
+        href=""
+        class="socials__mail socials__disabled js-preview-email"
+        target="_blank"
+        title="Email Address"
+      >
+        <i class="fa-solid fa-envelope"></i>
+      </a>
 
-            <a href="" class="socials__mail js-preview-email" target="_blank" title="Email Address">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
+      <a
+        href=""
+        class="socials__linkedin socials__disabled js-preview-linkedin"
+        target="_blank"
+        title="LinkedIn Profile"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
 
-            <a href="" class="socials__linkedin js-preview-linkedin" target="_blank" title="LinkedIn Profile">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a href="" class="socials__github js-preview-github" target="_blank" title="Github Profile">
-                <i class="fa-brands fa-github-alt"></i>
-            </a>
-        </nav>
-
-    </article>
+      <a
+        href=""
+        class="socials__github socials__disabled js-preview-github"
+        target="_blank"
+        title="Github Profile"
+      >
+        <i class="fa-brands fa-github-alt"></i>
+      </a>
+    </nav>
+  </article>
 </section>
-
-<!--JS classes needed for the different palettes:
-
-    const backgroundColor = document.querySelector('.js-background');
-    const info = document.querySelector('.js-info');
-    const socials = document.querySelector('.js-socials');
-
--->

@@ -89,7 +89,7 @@
   &__linkedin,
   &__github {
     display: block;
-    
+
     padding-top: 6px;
     border-radius: 50%;
     width: 32px;
@@ -100,6 +100,11 @@
     text-decoration: none;
     color: $dark-green-blue;
     cursor: pointer;
+  }
+
+  &__disabled {
+    pointer-events: none;
+    cursor: default;
   }
 }
 
