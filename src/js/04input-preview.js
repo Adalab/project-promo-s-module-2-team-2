@@ -2,7 +2,7 @@
 //FUNCIONES INPUT-PREVIEW
 
 const card = {
-  palette: 1,
+  palette: '',
   name: '',
   job: '',
   phone: '',
@@ -84,7 +84,16 @@ function handlePreview(event) {
   if (event.target.id === "github") {
     github();
   }
+  if (event.target.value === '1') {
+    card.palette = '1';
+  } else if (event.target.value === '2') {
+    card.palette = '2';
+  } else if (event.target.value === '3') {
+    card.palette = '3';
+  }
 }
+
+
 ///////////////
 
 form.addEventListener('input', handlePreview);
