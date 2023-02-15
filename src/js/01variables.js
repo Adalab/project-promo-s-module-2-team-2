@@ -39,3 +39,5 @@ const linkNumber = document.querySelector('.js-preview-number');
 const linkEmail = document.querySelector('.js-preview-email');
 const linkLinkedin = document.querySelector('.js-preview-linkedin');
 const linkGithub = document.querySelector('.js-preview-github');
+
+const form = document.querySelector('.js-form');

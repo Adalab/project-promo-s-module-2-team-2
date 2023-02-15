@@ -1,68 +1,93 @@
+/* eslint-disable strict */
 //FUNCIONES INPUT-PREVIEW
 
-function handleInputName(event) {
-  const nameWritten = inputName.value;
+const card = {
+  palette: 1,
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: ''
+};
 
-  if (nameWritten === '') {
-    previewName.innerHTML = 'Nombre Apellidos';
+function namePreview() {
+  if (inputName.value === '') {
+    card.name = 'Nombre Apellidos';
+    previewName.innerHTML = card.name;
   } else {
-    previewName.innerHTML = nameWritten;
-  }
-}
+    card.name = inputName.value
+    previewName.innerHTML = card.name;
+  };
+};
 
-function handleInputJob(event) {
-  const jobWritten = inputJob.value;
-
-  if (jobWritten === '') {
-    previewJob.innerHTML = 'Front-end Developer';
+function job() {
+  if (inputJob.value === '') {
+    card.job = 'Front-end Developer';
+    previewJob.innerHTML = card.job;
   } else {
-    previewJob.innerHTML = jobWritten;
-  }
-}
+    card.job = inputJob.value;
+    previewJob.innerHTML = card.job;
+  };
+};
 
-function handleInputEmail(event) {
-  const emailWritten = inputEmail.value;
-  if (emailWritten !== '') {
+function email() {
+  if (inputEmail.value !== '') {
     linkEmail.classList.remove('socials__disabled');
-    linkEmail.href = `mailto:${emailWritten}`;
-  };
-}
+    card.email = `mailto:${inputEmail.value}`;
+    linkEmail.href = card.email;
+  }
+};
 
-function handleInputNumber(event) {
-  const numberWritten = inputNumber.value;
-  if (numberWritten !== '') {
+function phone() {
+  if (inputNumber.value !== '') {
     linkNumber.classList.remove('socials__disabled');
-    linkNumber.href = `tel:${numberWritten}`;
+    card.phone = `tel:${inputNumber.value}`;
+    linkNumber.href = card.phone;
   };
+};
 
-}
-
-function handleInputLinkedin(event) {
-  const linkedinWritten = inputLinkedin.value;
-  if (linkedinWritten !== '') {
+function linkedin() {
+  if (inputLinkedin.value !== '') {
     linkLinkedin.classList.remove('socials__disabled');
-    linkLinkedin.href = linkedinWritten;;
+    card.linkedin = inputLinkedin.value;
+    linkLinkedin.href = card.linkedin;
   };
+};
 
-}
-
-function handleInputGithub(event) {
-  const githubWritten = inputGithub.value;
-  if (githubWritten !== '') {
+function github() {
+  if (inputGithub.value !== '') {
     linkGithub.classList.remove('socials__disabled');
-    linkGithub.href = githubWritten;
+    card.github = inputGithub.value;
+    linkGithub.href = card.github
   };
 }
 
-//EVENTOS INPUT-PREVIEW
 
-inputName.addEventListener('input', handleInputName);
-inputJob.addEventListener('input', handleInputJob);
+function handlePreview(event) {
+  if (event.target.id === "full_name") {
+    namePreview();
+  };
+  if (event.target.id === "job") {
+    job();
+  };
+  if (event.target.id === "email") {
+    email();
+  }
+  if (event.target.id === "phone") {
+    phone();
+  }
+  if (event.target.id === "linkedin") {
+    linkedin();
+  }
+  if (event.target.id === "github") {
+    github();
+  }
+}
+///////////////
 
-inputNumber.addEventListener('input', handleInputNumber);
-inputEmail.addEventListener('input', handleInputEmail);
-inputLinkedin.addEventListener('input', handleInputLinkedin);
-inputGithub.addEventListener('input', handleInputGithub);
+form.addEventListener('input', handlePreview);
 
 // /******* */
 // FormData.addEventListener("keyup", funcionManeja)
