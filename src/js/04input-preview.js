@@ -32,6 +32,7 @@ function job() {
   };
 };
 
+
 function email() {
   if (inputEmail.value !== '') {
     linkEmail.classList.remove('socials__disabled');
