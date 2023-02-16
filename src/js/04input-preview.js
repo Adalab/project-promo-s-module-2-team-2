@@ -13,31 +13,37 @@ const card = {
 };
 
 function handleInputName(event) {
-  card.name = inputName.value
+  card.name = inputName.value;
   updatePreview();
 };
 
 function handleInputJob(event) {
+  card.job = inputJob.value;
   updatePreview();
 };
 
 function handleInputEmail(event) {
+  card.email = inputEmail.value;
   updatePreview();
 };
 
 function handleInputNumber(event) {
+  card.phone = inputNumber.value;
   updatePreview();
 };
 
 function handleInputLinkedin(event) {
+  card.linkedin = inputLinkedin.value;
   updatePreview();
 }
 
 function handleInputGithub(event) {
+  card.github = inputGithub.value;
   updatePreview();
 }
 
 function updatePreview() {
+  console.log(card)
   // actualizar nombre
   if (card.name === '') {
     previewName.innerHTML = 'Nombre Apellido';
@@ -45,30 +51,30 @@ function updatePreview() {
     previewName.innerHTML = card.name;
   }
   // actualizar trabajo
-  if (inputName.value === '') {
-    previewName.innerHTML = 'Nombre Apellido';
+  if (card.job === '') {
+    previewJob.innerHTML = 'Front-end Developer';
   } else {
-    previewName.innerHTML = inputName.value;
+    previewJob.innerHTML = card.job;
   }
   // actualizar email
-  if (inputEmail.value !== '') {
+  if (card.email !== '') {
     linkEmail.classList.remove('socials__disabled');
-    linkEmail.href = `mailto:${inputEmail.value}`;
+    linkEmail.href = `mailto:${card.email}`;
   };
   // actualizar phone
-  if (inputNumber.value !== '') {
+  if (card.phone !== '') {
     linkNumber.classList.remove('socials__disabled');
-    linkNumber.href = `tel:${inputNumber.value}`;
+    linkNumber.href = `tel:${card.phone}`;
   };
   // actualizar Linkedin
-  if (inputLinkedin.value !== '') {
+  if (card.linkedin !== '') {
     linkLinkedin.classList.remove('socials__disabled');
-    linkLinkedin.href = inputLinkedin.value;
+    linkLinkedin.href = card.linkedin;
   };
   // actualizar github
-  if (inputGithub.value !== '') {
+  if (card.github !== '') {
     linkGithub.classList.remove('socials__disabled');
-    linkGithub.href = inputGithub.value;
+    linkGithub.href = card.github;
   };
 }
 
