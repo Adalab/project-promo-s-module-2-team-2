@@ -12,38 +12,12 @@ const card = {
   github: ''
 };
 
-function handleInputName(event) {
-  card.name = inputName.value;
-  updatePreview();
-};
-
-function handleInputJob(event) {
-  card.job = inputJob.value;
-  updatePreview();
-};
-
-function handleInputEmail(event) {
-  card.email = inputEmail.value;
-  updatePreview();
-};
-
-function handleInputNumber(event) {
-  card.phone = inputNumber.value;
-  updatePreview();
-};
-
-function handleInputLinkedin(event) {
-  card.linkedin = inputLinkedin.value;
-  updatePreview();
-}
-
-function handleInputGithub(event) {
-  card.github = inputGithub.value;
+function handleInputs(event) {
+  card[event.target.id] = event.target.value;
   updatePreview();
 }
 
 function updatePreview() {
-  console.log(card)
   // actualizar nombre
   if (card.name === '') {
     previewName.innerHTML = 'Nombre Apellido';
@@ -78,12 +52,6 @@ function updatePreview() {
   };
 }
 
-
-
-
-inputName.addEventListener('input', handleInputName);
-inputJob.addEventListener('input', handleInputJob);
-inputEmail.addEventListener('input', handleInputEmail);
-inputNumber.addEventListener('input', handleInputNumber);
-inputLinkedin.addEventListener('input', handleInputLinkedin);
-inputGithub.addEventListener('input', handleInputGithub);
+for (const eachInput of inputs) {
+  eachInput.addEventListener('input', handleInputs);
+};
