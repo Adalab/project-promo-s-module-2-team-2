@@ -38,6 +38,8 @@
       height: 30px;
       border: solid 1px $hospital-green;
       margin-left: 10%;
+      background-position: center;
+      object-fit: contain;
     }
     &--container {
       display: flex;
