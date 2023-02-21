@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 
 function handleReset(event) {
   event.preventDefault();

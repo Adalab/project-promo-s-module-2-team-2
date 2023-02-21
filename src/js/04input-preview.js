@@ -1,7 +1,7 @@
 /* eslint-disable strict */
 //FUNCIONES INPUT-PREVIEW
 
-const card = {
+let card = {
   palette: 1,
   name: '',
   job: '',
