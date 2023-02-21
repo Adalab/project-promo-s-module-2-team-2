@@ -1,5 +1,5 @@
 
-function handleClick(event) {
+function handleReset(event) {
   event.preventDefault();
   card = {
     palette: 1,
@@ -14,4 +14,4 @@ function handleClick(event) {
   updatePreview()
 }
 
-reset.addEventListener('click', handleClick)
+btnReset.addEventListener('click', handleReset)
