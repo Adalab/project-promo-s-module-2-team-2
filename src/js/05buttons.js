@@ -1,5 +1,6 @@
 
 function handleClick(event) {
+  event.preventDefault();
   card = {
     palette: 1,
     name: '',

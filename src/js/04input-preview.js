@@ -56,18 +56,5 @@ for (const eachInput of inputs) {
   eachInput.addEventListener('input', handleInputs);
 };
 
-/*
-function handleReset(ev) {
-ev.preventDefault;
-card.palette: 1,
-card.name: '';
-card.job: '';
-card.photo: '';
-card.email: '';
-card.phone:'';
-card.linkedin:'';
-card.github:'';
-}
 
-btnReset.addEventListener('click', handleReset);*/
 
