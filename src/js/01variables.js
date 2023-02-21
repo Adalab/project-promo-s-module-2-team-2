@@ -43,4 +43,4 @@ const profilePreview = document.querySelector('.js__profile-preview');
 
 // VARIABLES BOTÓN RESET
 
-const reset = document.querySelector('.js-btnreset');
+const btnReset = document.querySelector('.js-btnreset');
