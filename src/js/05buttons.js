@@ -1,16 +1,9 @@
+/* eslint-disable strict */
 
 function handleClick(event) {
-  card = {
-    palette: 1,
-    name: '',
-    job: '',
-    photo: '',
-    email: '',
-    phone: '',
-    linkedin: '',
-    github: ''
-  };
-  updatePreview()
+  updatePreview();
+
+  console.log(card);
 }
 
-reset.addEventListener('click', handleClick)
+reset.addEventListener('click', handleClick);
