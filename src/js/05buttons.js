@@ -1,9 +1,9 @@
 /* eslint-disable strict */
 
-function handleClick(event) {
-  updatePreview();
+// function handleClick(event) {
+//   updatePreview();
 
-  console.log(card);
-}
+//   console.log(card);
+// }
 
-reset.addEventListener('click', handleClick);
+// reset.addEventListener('click', handleClick);
