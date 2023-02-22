@@ -2,6 +2,11 @@
 
 
 //FUNCIONES PALETTES
+function addPalette1() {
+  background.classList.add('palette1');
+  info.classList.add('palette1');
+  socials.classList.add('palette1');
+}
 
 function addPalette2() {
   background.classList.add('palette2');
@@ -13,6 +18,14 @@ function addPalette3() {
   background.classList.add('palette3');
   info.classList.add('palette3');
   socials.classList.add('palette3');
+}
+
+function removePalette1() {
+if (background.classList.contains('palette1') && info.classList.contains('palette1') && socials.classList.contains('palette1')) {
+    background.classList.remove('palette1');
+    info.classList.remove('palette1');
+    socials.classList.remove('palette1');
+  }
 }
 
 function removePalette2() {

@@ -16,8 +16,8 @@ function handleReset(event) {
   resetInputs();
   resetImage();
   resetPalette();
+  localStorage.removeItem('formData');
 }
-
 
 function resetImage() {
   profileImage.style.backgroundImage = `url(./assets/images/profile-pic.jpg)`;

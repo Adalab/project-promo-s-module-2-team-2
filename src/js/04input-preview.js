@@ -15,7 +15,9 @@ let card = {
 profileImage.style.backgroundImage = `url('./assets/images/profile-pic.jpg')`;
 
 function handleInputs(event) {
-  card[event.target.id] = event.target.value;
+  card[event.target.id] = 
+  event.target.value;
+  localStorage.setItem('formData', JSON.stringify (card))
   updatePreview();
 }
 
