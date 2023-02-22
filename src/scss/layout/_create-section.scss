@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   box-shadow: 2px 5px 5px $black-20;
 
   &__info {
@@ -66,19 +66,22 @@
   }
 
   &__image {
-    width: 240px;
+    width: 200px;
     height: 200px;
-    background-size: contain;
+    border-radius: 50%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
 .socials {
-  padding-left: 20px;
-  margin-top: 3px;
+  margin-top: 8px;
+  margin-right: -65px;
   display: flex;
   list-style-type: none;
+  padding-right: 10px;
+  border-right: solid 5px $dirty-blue;
 
   &__mobile,
   &__mail,
@@ -118,6 +121,7 @@
 }
 
 .socials.palette2 {
+   border-right: solid 5px $rusty-red;
   .socials__mobile,
   .socials__mail,
   .socials__linkedin,
@@ -140,6 +144,7 @@
 }
 
 .socials.palette3 {
+  border-right: solid 5px $faded-orange;
   .socials__mobile,
   .socials__mail,
   .socials__linkedin,
