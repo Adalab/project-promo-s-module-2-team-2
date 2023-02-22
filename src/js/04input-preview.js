@@ -12,7 +12,6 @@ let card = {
   github: ''
 };
 
-
 function handleInputs(event) {
   card[event.target.id] =
     event.target.value;
@@ -52,13 +51,8 @@ function updatePreview() {
   if (card.github !== '') {
     linkGithub.classList.remove('socials__disabled');
     linkGithub.href = card.github;
-  };
-  profileImage.style.backgroundImage = `url(${card.photo})`;
+  }
 }
-
 for (const eachInput of inputs) {
   eachInput.addEventListener('input', handleInputs);
 };
-
-
-
