@@ -12,6 +12,8 @@ let card = {
   github: ''
 };
 
+profileImage.style.backgroundImage = `url('./assets/images/totoro.png')`;
+
 function handleInputs(event) {
   card[event.target.id] = event.target.value;
   updatePreview();

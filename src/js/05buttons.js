@@ -1,28 +1,7 @@
 /* eslint-disable strict */
 
-/*function resetInputs {
-  inputPalette.value = 1;
-  inputName.value = '';
-  inputJob.value = '';
-  inputEmail.value = '';
-  inputNumber.value = '';
-  inputGithub.value = '';
-  inputLinkedin.value = '';
-}*/
-
-// function resetImage {
-//   profileImage = 'url(./assets/images/totoro.jpeg)';
-//   profilePreview = '';
-// }
-
-// for (let i = 0; i < inputs.length; i++) {
-//   let id = inputs[i].id;
-//   input.getElementById(id).value = '';
-// }
-
 function handleReset(event) {
   event.preventDefault();
-  
   card = {
     palette: 1,
     name: '',
@@ -33,12 +12,27 @@ function handleReset(event) {
     linkedin: '',
     github: ''
   };
-
   updatePreview();
-  
-  //resetInputs();
-  //resetImage();
-  
+  resetInputs();
+  resetImage();
+  resetPalette();
+}
+
+
+function resetImage() {
+  profileImage.style.backgroundImage = `url(./assets/images/totoro.png)`;
+  profilePreview.style.backgroundImage = '';
+}
+
+function resetInputs(){
+  for (let i = 0; i < inputs.length; i++) {
+  inputs[i].value = '';
+  }
+}
+
+function resetPalette(){
+  radio1.checked=true;
+  handleRadio1();
 }
 
 resetBtn.addEventListener('click', handleReset)

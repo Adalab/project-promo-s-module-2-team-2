@@ -24,12 +24,9 @@
   background-color: transparent;
   margin-bottom: 20px;
   cursor: pointer;
-
-  &--link {
-    text-decoration: none;
-    color: $gunmetal;
-    text-transform: uppercase;
-  }
+  text-decoration: none;
+  color: $gunmetal;
+  text-transform: uppercase;
 }
 
 .card {
@@ -70,7 +67,6 @@
   &__image {
     width: 240px;
     height: 200px;
-    background-image: url(../images/totoro.png);
     /*background-position: center; con object-fit: cover*/
     background-size: contain;
     background-repeat: no-repeat;

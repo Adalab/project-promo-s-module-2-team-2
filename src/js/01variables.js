@@ -43,13 +43,5 @@ const profilePreview = document.querySelector('.js__profile-preview');
 
 // VARIABLES BOTONES
 
-/*const inputPalette = document.querySelector('.js-input-colors');
-const inputName = document.querySelector('.js-input-name');
-const inputJob = document.querySelector('.js-input-job');
-const inputNumber = document.querySelector('.js-input-number');
-const inputEmail = document.querySelector('.js-input-email');
-const inputLinkedin = document.querySelector('.js-input-linkedin');
-const inputGithub = document.querySelector('.js-input-github');*/
-
 const resetBtn = document.querySelector('.js-btnreset');
 const createBtn = document.querySelector('.js-create-btn');
