@@ -21,3 +21,10 @@ This project was supervised by the bootcamp instructors:
 - Dayana Romero @dayanare
 - Iván Garrido @igarrido-adalab
 - Yanelis Serrano @ytaylordev
+
+## Tools:
+
+- Zeplin
+- Vs Code
+- GitHub
+- Starter Kit Adalab
