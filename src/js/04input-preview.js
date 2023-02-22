@@ -12,12 +12,11 @@ let card = {
   github: ''
 };
 
-profileImage.style.backgroundImage = `url('./assets/images/profile-pic.jpg')`;
 
 function handleInputs(event) {
-  card[event.target.id] = 
-  event.target.value;
-  localStorage.setItem('formData', JSON.stringify (card))
+  card[event.target.id] =
+    event.target.value;
+  localStorage.setItem('formData', JSON.stringify(card))
   updatePreview();
 }
 
@@ -54,6 +53,7 @@ function updatePreview() {
     linkGithub.classList.remove('socials__disabled');
     linkGithub.href = card.github;
   };
+  profileImage.style.backgroundImage = `url(${card.photo})`;
 }
 
 for (const eachInput of inputs) {
