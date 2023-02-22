@@ -19,7 +19,6 @@ if (localStorageData) {
   inputNumber.value = card.phone;
   profileImage.style.backgroundImage = `url(${card.photo})`;
   profilePreview.style.backgroundImage = `url(${card.photo})`;
-  console.log(card.photo);
   inputLinkedin.value = card.linkedin;
   inputGithub.value = card.github;
   if (card.palette === '1') {

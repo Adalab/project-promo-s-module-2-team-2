@@ -41,6 +41,7 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
-// VARIABLES BOTÓN RESET
+// VARIABLES BOTONES
 
-const reset = document.querySelector('.js-btnreset');
+const resetBtn = document.querySelector('.js-btnreset');
+const createBtn = document.querySelector('.js-create-btn');

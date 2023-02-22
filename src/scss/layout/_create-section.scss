@@ -12,6 +12,7 @@
   }
   @media all and (min-width: 1024px) {
     width: 62%;
+    min-height: 70vh;
   }
 }
 
@@ -24,22 +25,20 @@
   background-color: transparent;
   margin-bottom: 20px;
   cursor: pointer;
-
-  &--link {
-    text-decoration: none;
-    color: $gunmetal;
-    text-transform: uppercase;
-  }
+  text-decoration: none;
+  color: $gunmetal;
+  text-transform: uppercase;
 }
 
 .card {
   background-color: $white-two;
   width: 240px;
   height: 329px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   box-shadow: 2px 5px 5px $black-20;
 
   &__info {
@@ -68,21 +67,23 @@
   }
 
   &__image {
-    width: 240px;
+    width: 200px;
     height: 200px;
-    background-image: url(../images/totoro.png);
-    /*background-position: center; con object-fit: cover*/
-    background-size: contain;
+    border-radius: 50%;
+    background-image: url('../images/profile-pic.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
 }
 
 .socials {
-  padding-left: 20px;
-  margin-top: 3px;
+  margin-top: 8px;
+  margin-right: -65px;
   display: flex;
   list-style-type: none;
+  padding-right: 10px;
+  border-right: solid 5px $dirty-blue;
 
   &__mobile,
   &__mail,
@@ -122,6 +123,7 @@
 }
 
 .socials.palette2 {
+   border-right: solid 5px $rusty-red;
   .socials__mobile,
   .socials__mail,
   .socials__linkedin,
@@ -144,6 +146,7 @@
 }
 
 .socials.palette3 {
+  border-right: solid 5px $faded-orange;
   .socials__mobile,
   .socials__mail,
   .socials__linkedin,
