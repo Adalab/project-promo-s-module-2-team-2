@@ -1,17 +1,14 @@
 .footer {
-  width: 100%;
-  min-height: 110px;
-  max-height: 10vh;
+  height: 110px;
   border-top: 1px solid $white-three;
   background-color: $white-two;
-}
-
-.footer__main {
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: auto;
+  // position: fixed;
 }
 
 .copy {
@@ -22,19 +19,16 @@
 }
 
 .adalab_logo {
-  width: 150px;
-  height: 70px;
-  margin-top: 3px;
+  width: 130px;
+  height: 60px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
 @media all and (min-width: 768px) {
-  footer {
+  .footer {
     padding: 10px 40px 10px 41px;
-    height: 60px;
-  }
-
-  .footer__main {
+    max-height: 110px;
     flex-direction: row;
     justify-content: space-between;
   }

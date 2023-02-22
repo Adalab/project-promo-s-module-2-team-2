@@ -1,6 +1,6 @@
 .main {
   margin: auto;
-  min-height: 88vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,7 +138,11 @@
 }
 
 @media all and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
   .main {
+    min-height: 88vh;
     &__title {
       padding-bottom: 30px;
       padding-top: 20px;
