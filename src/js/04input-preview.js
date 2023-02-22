@@ -1,7 +1,7 @@
 /* eslint-disable strict */
 //FUNCIONES INPUT-PREVIEW
 
-const card = {
+let card = {
   palette: 1,
   name: '',
   job: '',
@@ -11,6 +11,8 @@ const card = {
   linkedin: '',
   github: ''
 };
+
+profileImage.style.backgroundImage = `url('./assets/images/totoro.png')`;
 
 function handleInputs(event) {
   card[event.target.id] = event.target.value;
@@ -55,3 +57,6 @@ function updatePreview() {
 for (const eachInput of inputs) {
   eachInput.addEventListener('input', handleInputs);
 };
+
+
+
