@@ -15,6 +15,11 @@
 //   profilePreview = '';
 // }
 
+// for (let i = 0; i < inputs.length; i++) {
+//   let id = inputs[i].id;
+//   input.getElementById(id).value = '';
+// }
+
 function handleReset(event) {
   event.preventDefault();
   
