@@ -1,74 +1,62 @@
+/* eslint-disable strict */
 //FUNCIONES INPUT-PREVIEW
 
-function handleInputName(event) {
-  const nameWritten = inputName.value;
+let card = {
+  palette: 1,
+  name: '',
+  job: '',
+  photo: '',
+  email: '',
+  phone: '',
+  linkedin: '',
+  github: ''
+};
 
-  if (nameWritten === '') {
-    previewName.innerHTML = 'Nombre Apellidos';
-  } else {
-    previewName.innerHTML = nameWritten;
-  }
+profileImage.style.backgroundImage = `url('./assets/images/totoro.png')`;
+
+function handleInputs(event) {
+  card[event.target.id] = event.target.value;
+  updatePreview();
 }
 
-function handleInputJob(event) {
-  const jobWritten = inputJob.value;
-
-  if (jobWritten === '') {
+function updatePreview() {
+  // actualizar nombre
+  if (card.name === '') {
+    previewName.innerHTML = 'Nombre Apellido';
+  } else {
+    previewName.innerHTML = card.name;
+  }
+  // actualizar trabajo
+  if (card.job === '') {
     previewJob.innerHTML = 'Front-end Developer';
   } else {
-    previewJob.innerHTML = jobWritten;
+    previewJob.innerHTML = card.job;
   }
-}
-
-function handleInputEmail(event) {
-  const emailWritten = inputEmail.value;
-  if (emailWritten !== '') {
+  // actualizar email
+  if (card.email !== '') {
     linkEmail.classList.remove('socials__disabled');
-    linkEmail.href = `mailto:${emailWritten}`;
+    linkEmail.href = `mailto:${card.email}`;
   };
-}
-
-function handleInputNumber(event) {
-  const numberWritten = inputNumber.value;
-  if (numberWritten !== '') {
+  // actualizar phone
+  if (card.phone !== '') {
     linkNumber.classList.remove('socials__disabled');
-    linkNumber.href = `tel:${numberWritten}`;
+    linkNumber.href = `tel:${card.phone}`;
   };
-
-}
-
-function handleInputLinkedin(event) {
-  const linkedinWritten = inputLinkedin.value;
-  if (linkedinWritten !== '') {
+  // actualizar Linkedin
+  if (card.linkedin !== '') {
     linkLinkedin.classList.remove('socials__disabled');
-    linkLinkedin.href = linkedinWritten;;
+    linkLinkedin.href = card.linkedin;
   };
-
-}
-
-function handleInputGithub(event) {
-  const githubWritten = inputGithub.value;
-  if (githubWritten !== '') {
+  // actualizar github
+  if (card.github !== '') {
     linkGithub.classList.remove('socials__disabled');
-    linkGithub.href = githubWritten;
+    linkGithub.href = card.github;
   };
 }
 
-//EVENTOS INPUT-PREVIEW
+for (const eachInput of inputs) {
+  eachInput.addEventListener('input', handleInputs);
+};
 
-inputName.addEventListener('input', handleInputName);
-inputJob.addEventListener('input', handleInputJob);
 
-inputNumber.addEventListener('input', handleInputNumber);
-inputEmail.addEventListener('input', handleInputEmail);
-inputLinkedin.addEventListener('input', handleInputLinkedin);
-inputGithub.addEventListener('input', handleInputGithub);
 
-// /******* */
-// FormData.addEventListener("keyup", funcionManeja)
-// ////^funcion manejadora
-// if(eval.target.id === "¨name"){
-//   objeto.name= input.value
-// }else if(eval.target.id === "¨job"){
-//   objeto.job = input.value;
-// }

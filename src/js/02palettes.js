@@ -1,8 +1,8 @@
+/* eslint-disable strict */
 
 
 //FUNCIONES PALETTES
 function handleRadio1(event) {
-  console.log('fiestaaaaa');
   if (background.classList.contains('palette3') && info.classList.contains('palette3') && socials.classList.contains('palette3')) {
     background.classList.remove('palette3');
     info.classList.remove('palette3');
@@ -16,7 +16,6 @@ function handleRadio1(event) {
 }
 
 function handleRadio2(event) {
-  console.log('esperaaaaaanza');
   background.classList.add('palette2');
   info.classList.add('palette2');
   socials.classList.add('palette2');
@@ -28,7 +27,6 @@ function handleRadio2(event) {
 }
 
 function handleRadio3(event) {
-  console.log('somos las mejores');
   background.classList.add('palette3');
   info.classList.add('palette3');
   socials.classList.add('palette3');

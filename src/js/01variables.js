@@ -26,12 +26,6 @@ const radio2 = document.querySelector('.js-palette2');
 const radio3 = document.querySelector('.js-palette3');
 
 //VARIABLES INPUT-PREVIEW
-const inputName = document.querySelector('.js-input-name');
-const inputJob = document.querySelector('.js-input-job');
-const inputNumber = document.querySelector('.js-input-number');
-const inputEmail = document.querySelector('.js-input-email');
-const inputLinkedin = document.querySelector('.js-input-linkedin');
-const inputGithub = document.querySelector('.js-input-github');
 
 const previewName = document.querySelector('.js-preview-name');
 const previewJob = document.querySelector('.js-preview-job');
@@ -39,3 +33,15 @@ const linkNumber = document.querySelector('.js-preview-number');
 const linkEmail = document.querySelector('.js-preview-email');
 const linkLinkedin = document.querySelector('.js-preview-linkedin');
 const linkGithub = document.querySelector('.js-preview-github');
+
+const inputs = document.querySelectorAll('.js-input');
+
+const fr = new FileReader();
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
+
+// VARIABLES BOTONES
+
+const resetBtn = document.querySelector('.js-btnreset');
+const createBtn = document.querySelector('.js-create-btn');

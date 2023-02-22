@@ -1,5 +1,5 @@
 <section class="section__form">
-  <form class="form" action="#" method="post">
+  <form class="form js-form" action="#" method="post">
     <fieldset class="design">
       <legend class="design__header js-design-legend" title="Despliega el menú">
         <h3 class="design__title">
@@ -18,8 +18,8 @@
         <label class="design__label" for="colors">COLORES </label>
         <div class="design__container--colors1">
           <input
-            class="design__input js-palette1"
-            id="colors"
+            class="design__input js-input js-input-colors js-palette1"
+            id="palette"
             value="1"
             type="radio"
             name="colors"
@@ -32,8 +32,8 @@
 
         <div class="design__container--colors2">
           <input
-            class="design__input js-palette2"
-            id="colors"
+            class="design__input js-input js-input-colors js-palette2"
+            id="palette"
             value="2"
             type="radio"
             name="colors"
@@ -45,8 +45,8 @@
 
         <div class="design__container--colors3">
           <input
-            class="design__input js-palette3"
-            id="colors"
+            class="design__input js-input js-input-colors js-palette3"
+            id="palette"
             value="3"
             type="radio"
             name="colors"
@@ -73,18 +73,18 @@
         </h3>
       </legend>
       <div class="js-fill collapsable">
-        <label class="fill__label" for="full_name">Nombre completo</label>
+        <label class="fill__label" for="name">Nombre completo</label>
         <input
-          class="fill__input js-input-name"
+          class="fill__input js-input js-input-name"
           type="text"
-          id="full_name"
-          name="full_name"
+          id="name"
+          name="name"
           placeholder="Ej: Pepino Conde Furfur"
           required
         />
         <label class="fill__label" for="job">Puesto </label>
         <input
-          class="fill__input js-input-job"
+          class="fill__input js-input js-input-job"
           type="text"
           id="job"
           name="job"
@@ -94,12 +94,16 @@
         <label class="fill__label" for="photo">Imagen de perfil</label>
         <div class="fill__label--container">
           <label for="photo" class="fill__label--button">Añadir imagen</label>
-          <input type="file" id="photo" class="collapsable" />
-          <div class="fill__label--box"></div>
+          <input
+            type="file"
+            id="photo"
+            class="collapsable js__profile-upload-btn"
+          />
+          <div class="fill__label--box js__profile-preview"></div>
         </div>
         <label class="fill__label" for="email">Email</label>
         <input
-          class="fill__input js-input-email"
+          class="fill__input js-input js-input-email"
           type="email"
           id="email"
           name="email"
@@ -108,7 +112,7 @@
         />
         <label class="fill__label" for="phone">Teléfono</label>
         <input
-          class="fill__input js-input-number"
+          class="fill__input js-input js-input-number"
           type="tel"
           id="phone"
           name="phone"
@@ -116,7 +120,7 @@
         />
         <label class="fill__label" for="linkedin">Linkedin</label>
         <input
-          class="fill__input js-input-linkedin"
+          class="fill__input js-input js-input-linkedin"
           type="text"
           id="linkedin"
           name="linkedin"
@@ -124,7 +128,7 @@
         />
         <label class="fill__label" for="github">Github</label>
         <input
-          class="fill__input fill__input--last js-input-github"
+          class="fill__input fill__input--last js-input js-input-github"
           type="text"
           id="github"
           name="github"
@@ -149,7 +153,7 @@
   </fieldset>
   <div class="js-share collapsable">
     <div class="share__container--one">
-      <button class="share__button--create">
+      <button class="share__button--create js-create-btn">
         <i class="fa-regular fa-address-card"></i>
         CREAR TARJETA
       </button>
