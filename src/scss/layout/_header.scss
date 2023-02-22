@@ -4,14 +4,14 @@
   background-color: $white-four;
 }
 .logo-awesome-profile-cards {
-  width: 250px;
-  height: 64px;
+  width: 450px;
+  height: 225px;
   cursor: pointer;
 }
 
 @media all and (min-width: 768px) {
   .logo-awesome-profile-cards {
-    width: 419px;
-    height: 105px;
+    width: 300px;
+    height: 150px;
   }
 }
