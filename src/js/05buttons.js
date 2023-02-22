@@ -1,7 +1,23 @@
 /* eslint-disable strict */
 
+/*function resetInputs {
+  inputPalette.value = 1;
+  inputName.value = '';
+  inputJob.value = '';
+  inputEmail.value = '';
+  inputNumber.value = '';
+  inputGithub.value = '';
+  inputLinkedin.value = '';
+}*/
+
+// function resetImage {
+//   profileImage = 'url(./assets/images/totoro.jpeg)';
+//   profilePreview = '';
+// }
+
 function handleReset(event) {
   event.preventDefault();
+  
   card = {
     palette: 1,
     name: '',
@@ -12,7 +28,11 @@ function handleReset(event) {
     linkedin: '',
     github: ''
   };
-  updatePreview()
+
+  updatePreview();
+  //resetInputs();
+  //resetImage();
+  
 }
 
-btnReset.addEventListener('click', handleReset)
+resetBtn.addEventListener('click', handleReset)
