@@ -30,6 +30,7 @@ function handleReset(event) {
   };
 
   updatePreview();
+  
   //resetInputs();
   //resetImage();
   
