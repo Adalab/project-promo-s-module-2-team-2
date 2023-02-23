@@ -19,7 +19,7 @@ function handleReset(event) {
 }
 
 function resetImage() {
-  profileImage.style.backgroundImage = `url("../images/profile-pic.jpg")`;
+  profileImage.style.backgroundImage = `url(${card.photo})`;
   profilePreview.style.backgroundImage = '';
   updatePreview();
 }
