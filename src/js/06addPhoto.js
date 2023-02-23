@@ -15,9 +15,11 @@ function getImage(e){
 }
 
 function writeImage() {
-  card.photo = fr.result;
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  card.photo = fr.result;
+  localStorage.setItem('formData', JSON.stringify(card))
 }
 
-fileField.addEventListener('change', getImage);
+fileField.addEventListener('change', getImage); 
+

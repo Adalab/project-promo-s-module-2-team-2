@@ -15,8 +15,7 @@ let card = {
 function handleInputs(event) {
   card[event.target.id] =
     event.target.value;
-  localStorage.setItem('formData', JSON.stringify(card))
-  updatePreview();
+    updatePreview();
 }
 
 function updatePreview() {
