@@ -52,6 +52,7 @@ function updatePreview() {
     linkGithub.classList.remove('socials__disabled');
     linkGithub.href = card.github;
   }
+  profileImage.style.backgroundImage = `url(${card.photo})`;
 }
 for (const eachInput of inputs) {
   eachInput.addEventListener('input', handleInputs);
