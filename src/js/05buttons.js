@@ -17,6 +17,7 @@ function handleReset(event) {
   resetInputs();
   resetImage();
   resetPalette();
+  localStorage.setItem('formData', JSON.stringify(card))
 }
 
 function resetImage() {
