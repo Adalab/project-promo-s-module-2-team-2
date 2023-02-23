@@ -16,10 +16,11 @@ function handleReset(event) {
   resetInputs();
   resetImage();
   resetPalette();
+  updatePreview();
 }
 
 function resetImage() {
-  profileImage.style.backgroundImage = `url("./assets/images/profile-pic.jpg")`;
+  profileImage.style.backgroundImage = `url(../images/profile-pic.jpg)`;
   profilePreview.style.backgroundImage = '';
   updatePreview();
 }
