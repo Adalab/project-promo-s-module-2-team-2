@@ -4,7 +4,7 @@ function handleReset(event) {
   localStorage.removeItem('formData');
   event.preventDefault();
   card = {
-    palette: 1,
+    palette: '1',
     name: '',
     job: '',
     photo: '',
@@ -16,12 +16,12 @@ function handleReset(event) {
   resetInputs();
   resetImage();
   resetPalette();
-  updatePreview()
 }
 
 function resetImage() {
-  profileImage.style.backgroundImage = `url(../images/profile-pic.jpg)`;
+  profileImage.style.backgroundImage = `url("../images/profile-pic.jpg")`;
   profilePreview.style.backgroundImage = '';
+  updatePreview();
 }
 
 function resetInputs() {

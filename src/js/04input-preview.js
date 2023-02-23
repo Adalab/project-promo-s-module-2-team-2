@@ -2,7 +2,7 @@
 //FUNCIONES INPUT-PREVIEW
 
 let card = {
-  palette: 1,
+  palette: '1',
   name: '',
   job: '',
   photo: '',
@@ -52,6 +52,8 @@ function updatePreview() {
     linkGithub.classList.remove('socials__disabled');
     linkGithub.href = card.github;
   }
+  //actualizar paletes
+
 }
 for (const eachInput of inputs) {
   eachInput.addEventListener('input', handleInputs);
