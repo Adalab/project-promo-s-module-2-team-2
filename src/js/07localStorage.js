@@ -1,13 +1,4 @@
 
-const inputName = document.querySelector('.js-input-name');
-const inputJob = document.querySelector('.js-input-job');
-const inputNumber = document.querySelector('.js-input-number');
-const inputEmail = document.querySelector('.js-input-email');
-const inputLinkedin = document.querySelector('.js-input-linkedin');
-const inputGithub = document.querySelector('.js-input-github');
-const inputRadio = document.querySelectorAll('.js-input-colors');
-
-
 const localStorageData = JSON.parse(localStorage.getItem('formData'))
 console.log(localStorageData);;
 

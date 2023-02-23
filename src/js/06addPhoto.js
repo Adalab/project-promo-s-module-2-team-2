@@ -14,11 +14,6 @@ function getImage(e){
   fr.readAsDataURL(myFile);
 }
 
-
-/**
- * Una vez tenemos los datos listos en el FR podemos
- * trabajar con ellos ;)
- */
 function writeImage() {
   card.photo = fr.result;
   profileImage.style.backgroundImage = `url(${fr.result})`;
