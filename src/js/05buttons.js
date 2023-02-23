@@ -17,6 +17,7 @@ function handleReset(event) {
   resetInputs();
   resetImage();
   resetPalette();
+  updatePreview()
 }
 
 function resetImage() {
