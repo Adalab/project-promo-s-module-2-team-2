@@ -13,11 +13,10 @@ function handleReset(event) {
     linkedin: '',
     github: ''
   };
-  updatePreview();
+  handleInputs();
   resetInputs();
   resetImage();
   resetPalette();
-  localStorage.setItem('formData', JSON.stringify(card))
 }
 
 function resetImage() {
