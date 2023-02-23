@@ -70,7 +70,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-image: url('./assets/images/profile-pic.jpg');
+    background-image: url("../images/profile-pic.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -123,7 +123,7 @@
 }
 
 .socials.palette2 {
-   border-right: solid 5px $rusty-red;
+  border-right: solid 5px $rusty-red;
   .socials__mobile,
   .socials__mail,
   .socials__linkedin,
