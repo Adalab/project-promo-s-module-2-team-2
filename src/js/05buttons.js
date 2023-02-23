@@ -1,6 +1,7 @@
 /* eslint-disable strict */
 
 function handleReset(event) {
+  localStorage.removeItem('formData');
   event.preventDefault();
   card = {
     palette: 1,
@@ -16,7 +17,6 @@ function handleReset(event) {
   resetInputs();
   resetImage();
   resetPalette();
-  localStorage.removeItem('formData');
 }
 
 function resetImage() {
