@@ -21,7 +21,7 @@ function addPalette3() {
 }
 
 function removePalette1() {
-if (background.classList.contains('palette1') && info.classList.contains('palette1') && socials.classList.contains('palette1')) {
+  if (background.classList.contains('palette1') && info.classList.contains('palette1') && socials.classList.contains('palette1')) {
     background.classList.remove('palette1');
     info.classList.remove('palette1');
     socials.classList.remove('palette1');
@@ -29,14 +29,14 @@ if (background.classList.contains('palette1') && info.classList.contains('palett
 }
 
 function removePalette2() {
-if (background.classList.contains('palette2') && info.classList.contains('palette2') && socials.classList.contains('palette2')) {
+  if (background.classList.contains('palette2') && info.classList.contains('palette2') && socials.classList.contains('palette2')) {
     background.classList.remove('palette2');
     info.classList.remove('palette2');
     socials.classList.remove('palette2');
   }
 }
 function removePalette3() {
-    if (background.classList.contains('palette3') && info.classList.contains('palette3') && socials.classList.contains('palette3')) {
+  if (background.classList.contains('palette3') && info.classList.contains('palette3') && socials.classList.contains('palette3')) {
     background.classList.remove('palette3');
     info.classList.remove('palette3');
     socials.classList.remove('palette3');
@@ -49,11 +49,14 @@ function handleRadio1(event) {
 }
 
 function handleRadio2(event) {
+  removePalette1();
   removePalette3();
   addPalette2();
 }
 
 function handleRadio3(event) {
+  removePalette1();
+  removePalette2();
   addPalette3();
 }
 

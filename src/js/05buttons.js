@@ -13,6 +13,10 @@ function handleReset(event) {
     linkedin: '',
     github: ''
   };
+  createCard.classList.add('collapsable');
+  twitterBtn.classList.add('collapsable');
+  linkCard.classList.add('collapsable');
+  errorMsg.classList.add('collapsable');
   resetInputs();
   resetImage();
   resetPalette();
@@ -22,7 +26,6 @@ function handleReset(event) {
 function resetImage() {
   profileImage.style.backgroundImage = `url("./assets/images/profile-pic.jpg")`;
   profilePreview.style.backgroundImage = '';
-  updatePreview();
 }
 
 function resetInputs() {

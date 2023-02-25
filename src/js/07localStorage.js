@@ -1,5 +1,6 @@
-const localStorageData = JSON.parse(localStorage.getItem('formData'))
-console.log(localStorageData);;
+/* eslint-disable strict */
+const localStorageData = JSON.parse(localStorage.getItem('formData'));
+console.log(localStorageData);
 
 if (localStorageData) {
   card = localStorageData;
@@ -17,8 +18,14 @@ if (localStorageData) {
   inputJob.value = card.job;
   inputEmail.value = card.email;
   inputNumber.value = card.phone;
-  profileImage.style.backgroundImage = `url(${card.photo})`;
-  profilePreview.style.backgroundImage = `url(${card.photo})`;
+  //hasta que escribes en otro input la foto no carga la foto
+  //añadi un if, para que si hay otros datos en LS pero no foto se cargue la predefinida
+  if (card.photo === '') {
+    profileImage.style.backgroundImage = `url("./assets/images/profile-pic.jpg")`;
+  } else {
+    profileImage.style.backgroundImage = `url(${card.photo})`;
+    profilePreview.style.backgroundImage = `url(${card.photo})`;
+  }
   inputLinkedin.value = card.linkedin;
   inputGithub.value = card.github;
 
