@@ -1,9 +1,10 @@
 /* eslint-disable strict */
 
 function handleReset(event) {
+  localStorage.removeItem('formData');
   event.preventDefault();
   card = {
-    palette: 1,
+    palette: '1',
     name: '',
     job: '',
     photo: '',
@@ -12,26 +13,29 @@ function handleReset(event) {
     linkedin: '',
     github: ''
   };
-  updatePreview();
+  createCard.classList.add('collapsable');
+  twitterBtn.classList.add('collapsable');
+  linkCard.classList.add('collapsable');
+  errorMsg.classList.add('collapsable');
   resetInputs();
   resetImage();
   resetPalette();
-  localStorage.removeItem('formData');
+  updatePreview();
 }
 
 function resetImage() {
-  profileImage.style.backgroundImage = `url(./assets/images/profile-pic.jpg)`;
+  profileImage.style.backgroundImage = `url("./assets/images/profile-pic.jpg")`;
   profilePreview.style.backgroundImage = '';
 }
 
-function resetInputs(){
+function resetInputs() {
   for (let i = 0; i < inputs.length; i++) {
-  inputs[i].value = '';
+    inputs[i].value = '';
   }
 }
 
-function resetPalette(){
-  radio1.checked=true;
+function resetPalette() {
+  radio1.checked = true;
   handleRadio1();
 }
 

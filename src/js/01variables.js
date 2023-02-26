@@ -41,7 +41,19 @@ const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
 
+// VARIABLES LOCAL STORAGE
+const inputName = document.querySelector('.js-input-name');
+const inputJob = document.querySelector('.js-input-job');
+const inputNumber = document.querySelector('.js-input-number');
+const inputEmail = document.querySelector('.js-input-email');
+const inputLinkedin = document.querySelector('.js-input-linkedin');
+const inputGithub = document.querySelector('.js-input-github');
+
 // VARIABLES BOTONES
 
 const resetBtn = document.querySelector('.js-btnreset');
 const createBtn = document.querySelector('.js-create-btn');
+const errorMsg = document.querySelector('.js-error');
+const createCard = document.querySelector('.js-createCard');
+const twitterBtn = document.querySelector('.js-twitterBtn');
+const linkCard = document.querySelector('.js-linkCard');
