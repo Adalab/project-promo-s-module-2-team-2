@@ -17,6 +17,7 @@ function handleInputs(event) {
     event.target.value;
   localStorage.setItem('formData', JSON.stringify(card));
   updatePreview();
+  opacityBtn();
 }
 
 function updatePreview() {
@@ -50,6 +51,7 @@ function updatePreview() {
   // actualizar Linkedin
   if (card.linkedin !== '') {
     linkLinkedin.classList.remove('socials__disabled');
+    // modifiqué la dirección para solo tener que poner el nombre de usuario sino cuando la tarjeta está creada no funciona
     linkLinkedin.href = `https://www.linkedin.com/in${card.linkedin}`;
   } else if (card.linkedin === '') {
     linkLinkedin.classList.add('socials__disabled');

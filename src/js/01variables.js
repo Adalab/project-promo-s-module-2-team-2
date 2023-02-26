@@ -53,6 +53,8 @@ const inputGithub = document.querySelector('.js-input-github');
 
 const resetBtn = document.querySelector('.js-btnreset');
 const createBtn = document.querySelector('.js-create-btn');
+
+// añadí nuevas variables para cuando se crea la tarjeta
 const errorMsg = document.querySelector('.js-error');
 const createCard = document.querySelector('.js-createCard');
 const twitterBtn = document.querySelector('.js-twitterBtn');

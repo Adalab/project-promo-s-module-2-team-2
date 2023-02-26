@@ -13,6 +13,7 @@ function handleReset(event) {
     linkedin: '',
     github: ''
   };
+  // añadí esto para que desaparezca el mensaje de tarjeta creada y btn de twitter al darle a reset
   createCard.classList.add('collapsable');
   twitterBtn.classList.add('collapsable');
   linkCard.classList.add('collapsable');

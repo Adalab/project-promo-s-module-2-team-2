@@ -126,6 +126,7 @@
           name="linkedin"
           placeholder="Ej:pepino.furfur"
         />
+        <!-- cambié el placeholder porque al crear la tarjeta en el servidor ya está precargada la url y solo hay que añadir el nombre de usuario, igual para github -->
         <label class="fill__label" for="github">Github</label>
         <input
           class="fill__input fill__input--last js-input js-input-github"
@@ -153,12 +154,14 @@
   </fieldset>
   <div class="js-share collapsable">
     <div class="share__container--one">
+      <!-- le añadí opacidad al botoón de crear para que parezca desactiva hasta que cubras todos los campos obligatorios, pero no funciona -->
       <button class="share__button--create js-create-btn opacity">
         <i class="fa-regular fa-address-card"></i>
         CREAR TARJETA
       </button>
     </div>
     <div class="share__container--two">
+      <!-- oculté el mansaje de tarjeta creada y botón de twitter hasta que la tarjera haya sido creada, además cambié el botón de twiter a que fuera un enlace con estilos de botón para que funcionase -->
       <p class="share__text js-createCard collapsable">
         La tarjeta ha sido creada:
       </p>
@@ -170,7 +173,7 @@
       <p class="js-error share__msg collapsable"></p>
       <a
         class="share__button--twitter js-twitterBtn collapsable"
-        href="https://twitter.com/Interior/status/463440424141459456"
+        href=""
         target="_blank"
       >
         <i class="fa-brands fa-twitter"></i>
@@ -179,3 +182,5 @@
     </div>
   </div>
 </section>
+
+<!-- <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->

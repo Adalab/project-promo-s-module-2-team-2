@@ -43,19 +43,19 @@ function removePalette3() {
   }
 }
 
-function handleRadio1(event) {
+function handleRadio1() {
   removePalette2();
   removePalette3();
 }
 
-function handleRadio2(event) {
+function handleRadio2() {
+  // añadí en todos los casos el remove las palette que no están seleccionadas por si ayudaba con lo de que la palette se cargase en el LS pero no
   removePalette1();
   removePalette3();
   addPalette2();
 }
 
-function handleRadio3(event) {
-  removePalette1();
+function handleRadio3() {
   removePalette2();
   addPalette3();
 }

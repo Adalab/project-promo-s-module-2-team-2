@@ -14,6 +14,7 @@ function handleClickShare(event) {
       console.log(card);
 
       if (!card.success) {
+        // añadí los mensajes de error, la info de la card los muestra en inglés por lo qué cuando aparezca un tipo de mensaje puse la traducción para que salga en castellano. No vi más mensajes de error que estos dos, pero podría haber más.
         errorMsg.classList.remove('collapsable');
         if (card.error.includes('Mandatory fields:')) {
           errorMsg.innerHTML = 'Todos los campos son obligatorios excepto el télefono. Por favor, revise y cubra los campos restantes.';
@@ -23,20 +24,25 @@ function handleClickShare(event) {
           errorMsg.innerHTML = 'Lo sentimos, ha ocurrido un error, inténtelo de nuevo más tarde';
         }
       } else {
+        //para que se muestre la URL de la tarjeta creada y el botón de TW
         errorMsg.classList.add('collapsable');
         createCard.classList.remove('collapsable');
         twitterBtn.classList.remove('collapsable');
         linkCard.href = card.cardURL;
         linkCard.innerHTML = card.cardURL;
+        twitterBtn.href = `https://twitter.com/intent/tweet?url=${linkCard.href}&hashtags=card,awesoneCard`;
       }
     });
 }
 
 
-// esto no funciona
-if (inputName.value !== '' && inputJob.value !== '' && inputEmail.value !== '' && inputLinkedin.value !== '' && inputGithub.value !== '') {
-  createBtn.classList.remove('opacity');
+// añadí esto para que se quite la opacidad el botón cuando los campos obligatorios están cubiertos, pero no funciona
+function opacityBtn() {
+  if (inputName.value.length !== 0 && inputJob.value.length !== 0 && inputEmail.value.length !== 0 && inputLinkedin.value.length !== 0 && inputGithub.value.length !== 0) {
+    createBtn.classList.remove('opacity');
+  }
 }
+
 
 createBtn.addEventListener('click', handleClickShare);
 
