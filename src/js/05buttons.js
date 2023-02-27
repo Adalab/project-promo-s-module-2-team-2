@@ -30,8 +30,8 @@ function resetImage() {
 }
 
 function resetInputs() {
-  for (let i = 0; i < inputs.length; i++) {
-    inputs[i].value = '';
+  for (let i = 0; i < inputFill.length; i++) {
+    inputFill[i].value = '';
   }
 }
 

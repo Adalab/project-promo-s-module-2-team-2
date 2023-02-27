@@ -16,8 +16,8 @@ function handleInputs(event) {
   card[event.target.id] =
     event.target.value;
   localStorage.setItem('formData', JSON.stringify(card));
-  updatePreview();
   opacityBtn();
+  updatePreview();
 }
 
 function updatePreview() {
@@ -63,9 +63,8 @@ function updatePreview() {
   } else if (card.github === '') {
     linkGithub.classList.add('socials__disabled');
   }
-  //actualizar paletes
 }
 
 for (const eachInput of inputs) {
   eachInput.addEventListener('input', handleInputs);
-};
+}
