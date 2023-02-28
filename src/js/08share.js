@@ -14,13 +14,12 @@ function handleClickShare(event) {
       console.log(card);
 
       if (!card.success) {
-        // añadí los mensajes de error, la info de la card los muestra en inglés por lo qué cuando aparezca un tipo de mensaje puse la traducción para que salga en castellano. No vi más mensajes de error que estos dos, pero podría haber más.
         errorMsg.classList.remove('collapsable');
         if (card.error.includes('Mandatory fields:')) {
           errorMsg.innerHTML = 'Todos los campos son obligatorios excepto el télefono. Por favor, revise y cubra los campos restantes.';
           hideMsg();
         } else if (card.error.includes('Database error:')) {
-          errorMsg.innerHTML = 'La foto es desmasiado grande, intente reducirla o use otra foto';
+          errorMsg.innerHTML = 'La foto es desmasiado grande debe ser de 200x200 px y menor a 120 KB, intente reducirla o use otra foto';
           hideMsg();
         } else {
           errorMsg.innerHTML = 'Lo sentimos, ha ocurrido un error, inténtelo de nuevo más tarde';
@@ -49,12 +48,15 @@ function showMsg() {
   twitterBtn.classList.remove('collapsable');
   linkCard.classList.remove('collapsable');
 }
-// añadí esto para que se quite la opacidad el botón cuando los campos obligatorios están cubiertos, pero no funciona
+
 function opacityBtn() {
   if (inputName.value !== '' && inputJob.value !== '' && inputEmail.value !== '' && inputLinkedin.value !== '' && inputGithub.value !== '') {
     createBtn.classList.remove('opacity');
+  } else if (inputName.value === '' || inputJob.value === '' || inputEmail.value === '' || inputLinkedin.value === '' || inputGithub.value === '') {
+    createBtn.classList.add('opacity');
   }
 }
+
 opacityBtn();
 
 

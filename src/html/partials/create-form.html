@@ -126,7 +126,6 @@
           name="linkedin"
           placeholder="Ej:pepino.furfur"
         />
-        <!-- cambié el placeholder porque al crear la tarjeta en el servidor ya está precargada la url y solo hay que añadir el nombre de usuario, igual para github -->
         <label class="fill__label" for="github">Github</label>
         <input
           class="fill__input fill__input--last js-input js-input-github js-inputFill"
@@ -154,14 +153,12 @@
   </fieldset>
   <div class="js-share collapsable">
     <div class="share__container--one">
-      <!-- le añadí opacidad al botoón de crear para que parezca desactiva hasta que cubras todos los campos obligatorios, pero no funciona -->
       <button class="share__button--create js-create-btn opacity">
         <i class="fa-regular fa-address-card"></i>
         CREAR TARJETA
       </button>
     </div>
     <div class="share__container--two">
-      <!-- oculté el mansaje de tarjeta creada y botón de twitter hasta que la tarjera haya sido creada, además cambié el botón de twiter a que fuera un enlace con estilos de botón para que funcionase -->
       <p class="share__text js-createCard collapsable">
         La tarjeta ha sido creada:
       </p>

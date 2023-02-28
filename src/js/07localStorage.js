@@ -19,7 +19,6 @@ if (localStorageData) {
   inputEmail.value = card.email;
   inputNumber.value = card.phone;
   //hasta que escribes en otro input la foto no carga la foto, por qué?
-  //añadi un if, para que si hay otros datos en LS pero no foto se cargue la predefinida
   if (card.photo === '') {
     profileImage.style.backgroundImage = `url("./assets/images/profile-pic.jpg")`;
   } else {
