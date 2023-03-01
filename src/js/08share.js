@@ -18,11 +18,13 @@ function handleClickShare(event) {
         if (card.error.includes('Mandatory fields:')) {
           errorMsg.innerHTML = 'Todos los campos son obligatorios excepto el télefono. Por favor, revise y cubra los campos restantes.';
           hideMsg();
-        } else if (card.error.includes('Database error:')) {
-          errorMsg.innerHTML = 'La foto es desmasiado grande debe ser de 200x200 px y menor a 120 KB, intente reducirla o use otra foto';
+        } else if (card.error.includes('Database error: ER_DATA_TOO_LONG')) {
+          errorMsg.innerHTML = 'La foto es desmasiado grande debe ser de 200x200 px y menor a 120 KB, intente reducirla o use otra foto.';
           hideMsg();
+        } else if (card.error.includes('Database error: Database was shut down')) {
+          errorMsg.innerHTML = 'Ha ocurrido un error con el servidor, inténtelo de nuevo más tarde.';
         } else {
-          errorMsg.innerHTML = 'Lo sentimos, ha ocurrido un error, inténtelo de nuevo más tarde';
+          errorMsg.innerHTML = 'Lo sentimos, ha ocurrido un error, inténtelo de nuevo más tarde.';
           hideMsg();
         }
       } else {
