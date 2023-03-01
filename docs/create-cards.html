@@ -168,7 +168,7 @@
             <div class="js-fill collapsable">
               <label class="fill__label" for="name">Nombre completo</label>
               <input
-                class="fill__input js-input js-input-name"
+                class="fill__input js-input js-input-name js-inputFill"
                 type="text"
                 id="name"
                 name="name"
@@ -177,7 +177,7 @@
               />
               <label class="fill__label" for="job">Puesto </label>
               <input
-                class="fill__input js-input js-input-job"
+                class="fill__input js-input js-input-job js-inputFill"
                 type="text"
                 id="job"
                 name="job"
@@ -196,7 +196,7 @@
               </div>
               <label class="fill__label" for="email">Email</label>
               <input
-                class="fill__input js-input js-input-email"
+                class="fill__input js-input js-input-email js-inputFill"
                 type="email"
                 id="email"
                 name="email"
@@ -205,7 +205,7 @@
               />
               <label class="fill__label" for="phone">Teléfono</label>
               <input
-                class="fill__input js-input js-input-number"
+                class="fill__input js-input js-input-number js-inputFill"
                 type="tel"
                 id="phone"
                 name="phone"
@@ -213,19 +213,19 @@
               />
               <label class="fill__label" for="linkedin">Linkedin</label>
               <input
-                class="fill__input js-input js-input-linkedin"
+                class="fill__input js-input js-input-linkedin js-inputFill"
                 type="text"
                 id="linkedin"
                 name="linkedin"
-                placeholder="Ej: https://www.linkedin.com/in/pepino.furfur"
+                placeholder="Ej:pepino.furfur"
               />
               <label class="fill__label" for="github">Github</label>
               <input
-                class="fill__input fill__input--last js-input js-input-github"
+                class="fill__input fill__input--last js-input js-input-github js-inputFill"
                 type="text"
                 id="github"
                 name="github"
-                placeholder="Ej: https://github.com/pepinofurfur"
+                placeholder="Ej: pepinofurfur"
               />
             </div>
           </fieldset>
@@ -246,18 +246,29 @@
         </fieldset>
         <div class="js-share collapsable">
           <div class="share__container--one">
-            <button class="share__button--create js-create-btn">
+            <button class="share__button--create js-create-btn opacity">
               <i class="fa-regular fa-address-card"></i>
               CREAR TARJETA
             </button>
           </div>
           <div class="share__container--two">
-            <p class="share__text">La tarjeta ha sido creada:</p>
-            <a href="" class="share__link"></a>
-            <button class="share__button--twitter">
+            <p class="share__text js-createCard collapsable">
+              La tarjeta ha sido creada:
+            </p>
+            <a
+              href=""
+              class="share__link js-linkCard share__link"
+              target="_blank"
+            ></a>
+            <p class="js-error share__msg collapsable"></p>
+            <a
+              class="share__button--twitter js-twitterBtn collapsable"
+              href=""
+              target="_blank"
+            >
               <i class="fa-brands fa-twitter"></i>
               Compartir en twitter
-            </button>
+            </a>
           </div>
         </div>
       </section>
